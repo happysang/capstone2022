@@ -1,4 +1,4 @@
-package com.example.capstone.persistence;
+package com.example.capstone.repository;
 
 import com.example.capstone.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

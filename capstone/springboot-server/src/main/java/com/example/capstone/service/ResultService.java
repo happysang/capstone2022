@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.capstone.model.ResultEntity;
-import com.example.capstone.persistence.ResultRepository;
+import com.example.capstone.repository.ResultRepository;
 
 import java.util.List;
 import java.util.Optional;

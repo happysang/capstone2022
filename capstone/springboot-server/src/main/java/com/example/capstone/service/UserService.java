@@ -1,7 +1,7 @@
 package com.example.capstone.service;
 
 import com.example.capstone.model.UserEntity;
-import com.example.capstone.persistence.UserRepository;
+import com.example.capstone.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
