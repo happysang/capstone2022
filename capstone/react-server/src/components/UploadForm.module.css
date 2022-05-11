@@ -1,0 +1,140 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.form-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  border-radius: 10px;
+  border: 3px dashed #e8e6e6;
+  padding: 100px 50px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  transition: all 100ms ease-in-out;
+}
+
+.form-wrapper:hover {
+  background-color: #f1f1f1;
+  opacity: 10;
+}
+
+.form-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+input:disabled,
+input:disabled:hover,
+input:disabled:active {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 78px;
+  height: 78px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.detail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #777777;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+input[type="file"] {
+  appearance: none;
+  /* position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: -1px; */
+  /* overflow: hidden; */
+  /* clip: rect(0, 0, 0, 0); */
+  /* border: 0; */
+}
+
+.submit-btn {
+  text-align: center;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px 56px;
+  border-radius: 56px;
+  margin-top: 45px;
+  flex-shrink: 0;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.wrong-filetype {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #e8e6e6;
+  padding: 15px;
+  animation: slide-down 150ms ease-out forwards;
+}
+
+.wrong-filetype p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
