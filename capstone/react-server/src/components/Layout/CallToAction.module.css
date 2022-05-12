@@ -1,0 +1,35 @@
+.cta {
+  padding: 100px;
+}
+
+.background {
+  /* background-image: url("../../assets/images/imgCtaBackground.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat; */
+  background-color: #0a2640;
+  border-radius: 12px;
+  padding: 80px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.button-60 {
+  width: 200px;
+  font-size: 23px;
+  line-height: 28px;
+  padding: 16px 56px;
+  border-radius: 56px;
+}

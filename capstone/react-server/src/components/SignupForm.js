@@ -44,26 +44,21 @@ const SignupForm = () => {
   let passwordErrorMessage = "";
 
   const checkValidForm = () => {
-    let vaild = true;
-    for (const isTouched in inputsTouch) {
-      console.log(isTouched, inputsTouch[isTouched]);
-      if (inputsTouch[isTouched]) vaild = false;
+    for (let vaild in inputsValidity) {
+      if (inputsValidity[vaild]) return true;
+      else break;
     }
-    console.log("vaild", vaild);
-    if (!vaild) {
-      setInputsValidity((prevState) => {
-        return {
-          ...prevState,
-          name: enteredName ? true : false,
-          age: enteredAge ? true : false,
-          gender: enteredGender ? true : false,
-          email: enteredEmail ? true : false,
-          password1: enteredPassword1 ? true : false,
-          password2: enteredPassword2 ? true : false,
-        };
-      });
-      return false;
-    } else return true;
+    setInputsValidity((prevState) => {
+      return {
+        ...prevState,
+        name: enteredName ? true : false,
+        age: enteredAge ? true : false,
+        gender: enteredGender ? true : false,
+        email: enteredEmail ? true : false,
+        password1: enteredPassword1 ? true : false,
+        password2: enteredPassword2 ? true : false,
+      };
+    });
   };
 
   // Change Handler
@@ -213,7 +208,7 @@ const SignupForm = () => {
       setErrorMessage("");
       vaild = true;
     }
-    console.log(passwordErrorMessage);
+
     if (errorMessage || enteredPassword1.trim() === "") {
       setInputsValidity((prevState) => {
         return {
@@ -266,7 +261,7 @@ const SignupForm = () => {
     e.preventDefault();
     console.log("submit");
     let formIsVaild = checkValidForm();
-
+    console.log("formisvaild", formIsVaild);
     if (!formIsVaild) return;
 
     console.log("submit");

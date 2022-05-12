@@ -22,7 +22,7 @@ const Header = () => {
     authCtx.logout();
   };
 
-  const redirectUrl = authCtx.isLoggedIn ? "/upload" : "/login";
+  const redirectUrl = isLoggedIn ? "/upload" : "/login";
 
   return (
     <header className={styles.header}>
