@@ -54,16 +54,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 180px;
+  width: 185px;
+  height: 170px;
   overflow: hidden;
   border-radius: 18px;
 }
 
 .card-image img {
   display: block;
-  width: 70%;
-  height: 90%;
+  width: 90%;
+  height: 75%;
   object-fit: cover;
 }
 

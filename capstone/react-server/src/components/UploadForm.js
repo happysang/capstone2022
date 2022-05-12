@@ -13,6 +13,7 @@ const UploadForm = () => {
   const [isSpinner, setIsSpinner] = useState(false);
   const [fileIsValid, setFileIsValid] = useState(true);
   const [imageUrl, setImageUrl] = useState("");
+  const [userResult, setUserResult] = useState("");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,6 +45,8 @@ const UploadForm = () => {
         if (response.status !== 200) {
           throw new Error("에러 발생");
         }
+
+        // localStorage.setItem(RESULT, response);
         setIsSpinner(false);
         navigate("/result");
       } catch (err) {

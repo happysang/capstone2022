@@ -25,6 +25,7 @@ export const call = async (api, userData, isLogin = false) => {
   console.log(userData);
 
   try {
+    console.log("try");
     const response = await fetch(`${API_BASE_URL}${api}`, {
       method: "POST",
       headers,

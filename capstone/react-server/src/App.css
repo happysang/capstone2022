@@ -85,6 +85,11 @@ ol {
   background-color: #fff;
 }
 
+.green:hover {
+  background-color: #4ec788;
+  border-color: #4ec788;
+}
+
 .transparent:hover {
   color: #fff;
   background-color: #0a2640;
