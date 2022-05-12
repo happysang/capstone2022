@@ -1,0 +1,157 @@
+.content {
+  padding: 96px 100px;
+  background-color: #fafaff;
+}
+
+.category {
+  color: #777777;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  color: #000;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  margin-bottom: 84px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card {
+  width: 260px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fafaff;
+  box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 150ms ease-in-out;
+}
+
+.card:hover {
+  background-color: rgba(79, 233, 164, 0.7);
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.card-image img {
+  display: block;
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.card .detail {
+  position: relative;
+  top: -10px;
+  padding: 15px 35px;
+}
+
+.detail-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.detail-desc {
+  font-size: 14px;
+}
+
+/* 지우기 */
+/* .content-list {
+}
+
+.content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 165px;
+}
+
+.content-left {
+  width: 430px;
+  height: auto;
+  margin-right: 150px;
+  overflow: hidden;
+}
+
+.content-left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-right {
+  max-width: 400px;
+  width: 35rem;
+  flex-direction: column;
+} */
+
+/* .content-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.content-item:nth-child(2) div:nth-child(1) {
+  margin-right: 0;
+}
+
+.content-item:nth-child(2) div:nth-child(2) {
+  margin-right: 200px;
+} */
+
+/* .content-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  margin-bottom: 40px;
+  text-align: start;
+} */
+
+/* .content-detail-list {
+}
+
+.content-detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.content-detail-item img {
+  width: 36px;
+  height: 36px;
+  margin-right: 27px;
+}
+
+.content-detail-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000;
+} */

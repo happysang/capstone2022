@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px;
+  background-color: #f1f1f1;
+}
+
+/* background: rgb(10, 38, 64);
+  background: linear-gradient(
+    130deg,
+    rgba(10, 38, 64, 1) 50%,
+    rgba(79, 233, 164, 1) 100%
+  ); */
+
+.logo {
+  display: block;
+  width: 135px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.footer p {
+  width: 450px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #777777;
+}
+
+.detail {
+  margin-bottom: 64px;
+}
