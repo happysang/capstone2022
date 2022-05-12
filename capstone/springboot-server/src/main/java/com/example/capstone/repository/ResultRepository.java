@@ -1,4 +1,4 @@
-package com.example.capstone.persistence;
+package com.example.capstone.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
