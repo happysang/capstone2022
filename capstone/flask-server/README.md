@@ -1,19 +1,35 @@
 졸업작품 캡스톤 프로젝트
 
-1. 가상환경 세팅
+1. Download Anaconda
+	: https://www.anaconda.com/products/distribution
 
-- 아나콘다 설치
-Anaconda3 install : https://www.anaconda.com/products/distribution
+2. Create Virtual environment
+	- conda create -n name python=3.6
 
-- conda create -n flask_ai python=3.6
-- conda activate flask_ai
+3. conda activate name
 
-2. pytorch ,PIL , efficientnet_pytorch, numpy,torchvision install
+4. Install Package
+	- pip install Flask
+	- pip install Flask-Cors
+	- pip install Pillow
+	- pip install numpy
+	- conda install pytorch torchvision torchaudio cpuonly -c pytorch
+		
+	- pip install efficientnet-pytorch
+	
 
-(추후 가상환경까지 커밋 예정) 
+TEST Mode
 
-3. Test Code
+	- HobeAI(mode='Test',pretrained_path='D:/capstone2022/capstone/flask-server/flask/save_model',debug=True)
 
-	1. Run flask server	
-	2. /tospring 
-	3. result check 
+Demo Mode
+	- HobeAI(mode='Demo',pretrained_path='D:/capstone2022/capstone/flask-server/flask/save_model',debug=True)
+
+
+Start
+
+	1. Run flask-server
+		...waiting...	
+	2. Run React 
+	3. /test 
+	4. Check Result

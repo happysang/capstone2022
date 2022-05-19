@@ -1,6 +1,5 @@
 import sys
 import numpy as np
-from hairskin_AI.custom_model import kgu_Network
 
 import torch.nn.functional as F
 import torch
@@ -25,9 +24,16 @@ torch.manual_seed(random_seed)
 
 
 class HobeAI():
-    def __init__(self,pretrained_path=None):
-        self.pretrained_root = pretrained_path
-        self.pretrained_path_list = os.listdir(self.pretrained_root)
+    def __init__(self,mode='Test',pretrained_path=None,debug=True):
+        self.pretrained_root = None
+        self.pretrained_path_list = None
+        self.mode = mode
+
+        if mode == 'Test':
+            self.pretrained_root = pretrained_path
+            self.pretrained_path_list = os.listdir(self.pretrained_root)
+
+
         self.main_transforms = transforms.Compose([
                                         transforms.Resize([int(600), int(600)]),
                                         transforms.ToTensor(),
@@ -36,60 +42,98 @@ class HobeAI():
         self.label_mapping = {0: '양호', 1: '경증', 2: '중증', 3: '위증'}
         self.col_index = {'모낭사이홍반':0,'모낭홍반농포':1,'미세각질':2,'비듬':3,'탈모':4,'피지과다':5}
         self.type_mat = {'양호' : 0.0 , '경증' : 0.5 ,'중증' : 1 ,'위증':1.5}
+        self.map_dict = {2: 'dry', 5: 'oily', 4: 'loss'}
+        self.debug = debug
+        self.model_list = self.get_model(type='efficientNet', name='efficientNet').items()
+        self.standard_mat = np.zeros(shape=(6)) #평가 척도
+
     def get_Network(self,type):
-        Network_List = {'moblievitNet': kgu_Network(feature_extract=True, device='cpu', num_class=4),
-                             'efficientNet': EfficientNet.from_pretrained('efficientnet-b4', num_classes=4)
-                             }
+        Network_List = {'efficientNet': EfficientNet.from_pretrained('efficientnet-b4', num_classes=4)}
         return Network_List[type]
 
+    # Test Image Info
+    # 1.jpg : 미세각질 (2 : 중증)
+    # 2.jpg : 탈모 (2 : 중증)
+    # 3.jpg : 탈모 (1 : 경증 - 거의 양호 수준)
+    # 4.jpg : 모낭홍반농포 : 3 위증
+    # 5.jpg : 모낭사이홍반 : 위증
     def process(self,image=None):
-        import matplotlib.pyplot as plt
-        # Test Image Info
-        # 1.jpg : 미세각질 (2 : 중증)
-        # 2.jpg : 탈모 (2 : 중증)
-        # 3.jpg : 탈모 (1 : 경증 - 거의 양호 수준)
-        # 4.jpg : 모낭홍반농포 : 3 위증
-        # 5.jpg : 모낭사이홍반 : 위증
-        model_list = self.get_model(type='efficientNet', name='efficientNet').items()
-        image_root = './test_image'
-        image_list = os.listdir(image_root)
 
+        if self.mode == 'Test':
+            result = self.TestMode()
+            return result
+        elif self.mode == 'Demo':
+            wrap_dict = dict()
+            wrap_dict['typeOfScalp'] = list()
+            wrap_dict['User_ID'] = 'DummyTestID_qorgh346'
 
-        for idx,image in enumerate(image_list):
-            # if idx == 2:
-            #     break
-            self.standard_mat = np.zeros(shape=(6))
-            output = dict()
-            img_path = os.path.join(image_root,image)
-            img = Image.open(img_path)
-
+            img = Image.open(image)
             img = self.main_transforms(img).unsqueeze(dim=0)
-
-            for name,model in model_list:
+            for name,model in self.model_list:
+                output = dict()
                 model.eval()
                 with torch.no_grad():
                     predict = model(img)
-
-                    predict = F.softmax(predict,dim=1)
-                    # predict = nn.Softmax(predict,dim=1)
-                    arg_idx = torch.argmax(predict,dim=1)
-
+                    predict = F.softmax(predict, dim=1)
+                    arg_idx = torch.argmax(predict, dim=1)
                     result = self.label_mapping[arg_idx.item()]
                     col_idx = self.col_index[name]
-
                     self.standard_mat[col_idx] = self.type_mat[result]
-                    output[name] = (predict[0][arg_idx.item()].item(),result)
+                    output['type'] = name
+                    output['value'] = predict[0][arg_idx.item()].item()
+                    output['state'] = result
+                    # output[name] = (predict[0][arg_idx.item()].item(), result)
+                    wrap_dict['typeOfScalp'].append(output)
 
-                # test hojun
-                # self.standard_mat = np.array([0.5,0.5,0.0,0.5,0,1])
+            wrap_dict['result'] = self.scalp_type_calculating()['result']
+
+            if self.debug:
+                print(wrap_dict)
+
+            return wrap_dict
 
 
-                    result = self.scalp_type_calculating()
-                    result['typeOfScalp'] = output
-            print(img_path)
-            print(result)
-            # sys.exit()
-        return result
+
+
+
+    def TestMode(self):
+        #Local에 저장된 이미지를 불러와 테스트 해보는 코드
+        #플라스크 단독 데모 가능
+        #이미지 폴더 주소 적기
+        image_root = 'D:/capstone2022/capstone/flask-server/flask/test_image'
+        image_list = os.listdir(image_root)
+        wrap_dict = dict()
+
+        for idx, image in enumerate(image_list):
+            self.standard_mat = np.zeros(shape=(6))
+
+            img_path = os.path.join(image_root, image)
+            img = Image.open(img_path)
+            img = self.main_transforms(img).unsqueeze(dim=0)
+            wrap_dict['typeOfScalp'] = list()
+            wrap_dict['User_ID'] = 'DummyTestID_qorgh346'
+            for name, model in self.model_list:
+                model.eval()
+                output = dict()
+                with torch.no_grad():
+                    predict = model(img)
+                    predict = F.softmax(predict, dim=1)
+                    arg_idx = torch.argmax(predict, dim=1)
+                    result = self.label_mapping[arg_idx.item()]
+                    col_idx = self.col_index[name]
+                    self.standard_mat[col_idx] = self.type_mat[result]
+                    output['type'] = name
+                    output['value'] = predict[0][arg_idx.item()].item()
+                    output['state'] = result
+                    # output[name] = (predict[0][arg_idx.item()].item(), result)
+                    wrap_dict['typeOfScalp'].append(output)
+            wrap_dict['result'] = self.scalp_type_calculating()['result']
+
+            if self.debug:
+                print(img_path)
+                print(wrap_dict)
+        return wrap_dict
+
 
     def scalp_type_calculating(self):
 
@@ -97,59 +141,54 @@ class HobeAI():
         #multi value : 민감성 , 비듬성 , 지루성 , 염증성
         cal_result = {'result':''}
 
-        good = (self.standard_mat == 0).nonzero()[0]
+
+        good = (self.standard_mat == 0.0).nonzero()[0]
+        fine = (self.standard_mat == 0.5).nonzero()[0]
+        #양호 기준 판단 :
         one_value = (self.standard_mat >= 1.0).nonzero()[0]
-        multi_value = (self.standard_mat >= 0.5).nonzero()[0]
-
+        bad_value = (self.standard_mat >= 1.5).nonzero()[0]
         # self.col_index = {'모낭사이홍반':0,'모낭홍반농포':1,'미세각질':2,'비듬':3,'탈모':4,'피지과다':5}
-        if len(good) >= 6:
+        if len(good) >= 3 or len(fine)>=6 :  #대부분 진단 결과가 양호 또는 경증일 때는 "양호"
             cal_result['result'] = 'good'
+            return cal_result
 
-        if len(one_value) == 1:
-            model_index = one_value[0]
-            if model_index == 2:
-                # print('result = 건성')
-                cal_result['result'] = 'dry'
-                return cal_result
-            elif model_index == 5:
-                cal_result['result'] = 'oily'
-                return cal_result
-                # print('result = 지성')
-            elif model_index == 4:
-                cal_result['result'] = 'loss'
-                return cal_result
-                # print('result = 탈모성')
-            # return cal_result
-        if len(multi_value) == 2:
-            c = 0
-            for i in multi_value:
-                if i in [0,2]:
-                    c+=1
-            if c == 2:
-                cal_result['result'] = 'sensitive'
-                # print('result = 민감성')
-        elif len(multi_value) == 3:
-            c = 0
-            for i in multi_value:
-                if i in [2,3,5]:
-                    c+=1
-            if c == 3:
-                cal_result['result'] = 'dandruffy'
-                # print('result = 비듬성')
-        elif len(multi_value) >= 4:
-            c_1,c_2 = 0,0
-            for i in multi_value:
-                if i in [0,5]:
-                    c_1 += self.standard_mat[i]
-                elif i in [1]:
-                    c_2 += self.standard_mat[i]
+        if len(fine) >= 4: # 두피 상태가 양호하지는 않지만 경증이 대부분인 경우 (건성,지성,탈모성 구별 가능)
+            for i in one_value:
+                if i in list(self.map_dict.keys()):
+                    cal_result['result'] = self.map_dict[i]
+                    if self.standard_mat[4] >= 1.0:
+                        cal_result['result'] = 'loss'
+                    return cal_result
 
-            if c_1 >= c_2:
-                cal_result['result'] = 'seborrheric'
-                # print('result = 지루성')
-            else:
-                cal_result['result'] = 'infection'
-                # print('result = 염증성' )
+        #각 증상별 우선순위를 정함
+        #"표"를 참고해보면 < 탈모, 민감성, 염증성, 비듬성>은 위증이냐 아니냐라는 기준으로 구별이 가능함
+        priorityMemory = {}
+        if len(bad_value) >= 1:
+            flag_mat = 0.0
+            # 진단 결과 : 민감성, 지루성, 염증성, 비듬성 판단함
+            for i in bad_value:
+                if i == 4: #탈모 진단 모델이 위증이라고 판단한거면 무조건 탈모인거임.
+                    priorityMemory[0] = 'loss' #탈모성
+                if i == 3: ##비듬 진단 모델이 위증이라고 판단했을 때
+                    priorityMemory[1] = 'dandruff' #비듬성
+                    # return cal_result
+                if i == 1:#모낭홍반농포 진단 모델이 위증이라고 판단했을 때
+                    priorityMemory[2] = 'inflammation'#염증성
+                    # return cal_result
+                if i == 0 or i == 5: #지루성과 민감성 판단 기준
+                    #피지과다 진단 , 모낭사이홍반 진단 모델 각각 위증이라고 판단했을 때는 지루성 vs 민감성
+                    flag_mat += 1
+
+            prior_key = sorted(list(priorityMemory.keys()))
+            if len(prior_key) != 0:
+                cal_result['result'] = priorityMemory[prior_key[0]]
+                return cal_result
+
+            if flag_mat >= 1:
+                cal_result['result'] = 'seborrheric' if flag_mat == 2 else 'sensitive'
+            return cal_result
+
+        cal_result['result'] = 'normal' #표에 해당하지 않은 경우에는 'normal'로 표시
         return cal_result
 
 
@@ -158,12 +197,9 @@ class HobeAI():
         model_dict = {}
         for weight_file in self.pretrained_path_list:
             pt_path = os.path.join(self.pretrained_root,weight_file)
-            check_point = torch.load(pt_path,map_location='cpu')#map_location='cpu')
+            check_point = torch.load(pt_path,map_location='cpu')
             net = self.get_Network(type)
             model = torch.nn.DataParallel(net)
-            if type == 'moblievitNet':
-                model = model.get_model(name)
-
             model.load_state_dict(check_point)
             model_dict[weight_file.split('_')[-1][:-3]] = model
             # sys.exit()
