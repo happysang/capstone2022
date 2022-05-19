@@ -1,9 +1,27 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 // import NotFoundMessage from "./NotFoundMessage";
 import MyResponsiveRadar from "./MyResponsiveRadar";
 import styles from "./ResultView.module.css";
+import {API_BASE_URL} from '../service/backend-config';
 
 const ResultView = () => {
+  useEffect(() => {
+    const result = localStorage.getItem("RESULT");
+    const api = async () => {
+      const response = await fetch(`${API_BASE_URL}/result`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(result),
+      });
+
+      const data = await response.json();
+      console.log(data);
+    };
+
+    api();
+  }, []);
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.title}>진단결과</h1>

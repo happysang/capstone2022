@@ -14,30 +14,30 @@ const UploadForm = () => {
   const [isSpinner, setIsSpinner] = useState(false);
   const [fileIsValid, setFileIsValid] = useState(true);
 
-  useEffect(() => {
-    localStorage.setItem("RESULT", null);
-  }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("RESULT", null);
+  // }, []);
 
-  useEffect(() => {
-    const obj = {
-      data: 3,
-      name: "userName",
-    };
+  // useEffect(() => {
+  //   const obj = {
+  //     data: 3,
+  //     name: "userName",
+  //   };
 
-    const api = async () => {
-      const response = await fetch(`${API_BASE_URL}/result`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(obj),
-      });
+  //   const api = async () => {
+  //     const response = await fetch(`${API_BASE_URL}/result`, {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(obj),
+  //     });
 
-      console.log(response);
-    };
+  //     console.log(response);
+  //   };
 
-    api();
-  }, []);
+  //   api();
+  // }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
