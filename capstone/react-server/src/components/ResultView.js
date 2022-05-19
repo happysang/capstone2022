@@ -1,3 +1,5 @@
+// import { useEffect, useState } from "react";
+// import NotFoundMessage from "./NotFoundMessage";
 import MyResponsiveRadar from "./MyResponsiveRadar";
 import styles from "./ResultView.module.css";
 

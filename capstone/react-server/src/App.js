@@ -26,23 +26,23 @@ function App() {
   }
 
   //첫 번째 렌더링을 마친 후 실행
-  useEffect(() => {
-    axios({
-      url: "home",
-      method: "GET",
-    }).then((res) => {
-      callback(res.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios({
+  //     url: "home",
+  //     method: "GET",
+  //   }).then((res) => {
+  //     callback(res.data);
+  //   });
+  // }, []);
 
-  useEffect(() => {
-    axios({
-      url: "readall",
-      method: "GET",
-    }).then((res) => {
-      callback2(res.data[0].loginId);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios({
+  //     url: "readall",
+  //     method: "GET",
+  //   }).then((res) => {
+  //     callback2(res.data[0].loginId);
+  //   });
+  // }, []);
 
   return (
     <React.Fragment>
