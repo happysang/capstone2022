@@ -14,9 +14,9 @@ const UploadForm = () => {
   const [isSpinner, setIsSpinner] = useState(false);
   const [fileIsValid, setFileIsValid] = useState(true);
 
-  // useEffect(() => {
-  //   localStorage.setItem("RESULT", null);
-  // }, []);
+  useEffect(() => {
+    localStorage.setItem("RESULT", null);
+  }, []);
 
   // useEffect(() => {
   //   const obj = {

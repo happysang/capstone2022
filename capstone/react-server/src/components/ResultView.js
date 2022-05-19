@@ -6,7 +6,16 @@ import {API_BASE_URL} from '../service/backend-config';
 
 const ResultView = () => {
   useEffect(() => {
-    const result = localStorage.getItem("RESULT");
+    const result = {
+      "title" : "새 포스트",
+      "overallData": "전체 데이터222222",
+      "data1": "데이터1",
+      "data2": "데이터2",
+      "data3": "데이터3",
+      "data4": "데이터4",
+      "data5": "데이터5",
+      "data6": "데이터6"
+  };
     const api = async () => {
       const response = await fetch(`${API_BASE_URL}/result`, {
         method: "POST",
