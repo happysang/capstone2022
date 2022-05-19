@@ -117,3 +117,6 @@
   font-size: 13px;
   padding-left: 3px;
 }
+
+@media (max-width: var(--lg)) {
+}

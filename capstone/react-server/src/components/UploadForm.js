@@ -5,6 +5,7 @@ import styles from "./UploadForm.module.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
+import { API_BASE_URL } from "../service/backend-config";
 
 const UploadForm = () => {
   const navigate = useNavigate();
@@ -12,8 +13,31 @@ const UploadForm = () => {
   const [isloaded, setIsLoaded] = useState(false);
   const [isSpinner, setIsSpinner] = useState(false);
   const [fileIsValid, setFileIsValid] = useState(true);
-  const [imageUrl, setImageUrl] = useState("");
-  const [userResult, setUserResult] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("RESULT", null);
+  }, []);
+
+  useEffect(() => {
+    const obj = {
+      data: 3,
+      name: "userName",
+    };
+
+    const api = async () => {
+      const response = await fetch(`${API_BASE_URL}/result`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(obj),
+      });
+
+      console.log(response);
+    };
+
+    api();
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -46,7 +70,10 @@ const UploadForm = () => {
           throw new Error("에러 발생");
         }
 
-        // localStorage.setItem(RESULT, response);
+        // flask에서 받아온 데이터를 localStorage에 저장
+        const data = JSON.stringify(response.data);
+        localStorage.setItem("RESULT", data);
+
         setIsSpinner(false);
         navigate("/result");
       } catch (err) {
