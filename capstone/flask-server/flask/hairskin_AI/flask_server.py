@@ -4,6 +4,11 @@ from flask_cors import CORS
 from PIL import Image
 
 app = Flask(__name__)
+cors = CORS(app , resources={r"/*": {"origins": "*", "allow_headers": "*", "expose_headers": "*"}})
+
+@app.route('/upload')
+def upload_file():
+    return render_template("getimage.html")
 
 hobe = HobeAI(mode='Test',pretrained_path='D:/capstone2022/capstone/flask-server/flask/save_model',debug=True)
 @app.route("/tospring")
