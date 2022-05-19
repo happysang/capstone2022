@@ -1,10 +1,27 @@
+import { useEffect, useState } from "react";
 import Container from "../UI/Container";
 import iconMessage from "../assets/icons/iconMessage.png";
 import iconMagnifier from "../assets/icons/iconMagnifier.png";
 import styles from "./DashBoard.module.css";
 import MyResponsiveLine from "./MyResponsiveLine";
+import {API_BASE_URL} from '../service/backend-config';
 
 const DashBoard = () => {
+  useEffect(() => {
+    const api = async () => {
+      const response = await fetch(`${API_BASE_URL}/result`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await response.json();
+      console.log(data);
+    };
+
+    api();
+  }, []);
   return (
     <div className={styles.dashboard}>
       <Container>
