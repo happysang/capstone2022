@@ -3,8 +3,12 @@
   padding: 100px;
 }
 
+.user-content {
+  width: 100%;
+}
+
 .userInfo {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 900;
   white-space: nowrap;
 }
@@ -56,4 +60,152 @@
   text-align: center;
   font-weight: 700;
   font-size: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .userInfo {
+    font-size: 28px;
+  }
+
+  .overview-list {
+    padding: 30px 16px;
+    margin: 38px 0;
+  }
+
+  .overview-item {
+    padding: 0 40px;
+  }
+
+  .icon {
+    width: 76px;
+    height: 76px;
+    margin-right: 10px;
+  }
+
+  .value {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .dashboard {
+    padding: 80px;
+    padding-bottom: 100px;
+  }
+
+  .overview-list {
+    margin: 32px 0;
+  }
+
+  .overview-item {
+    padding: 0 28px;
+  }
+
+  .icon {
+    width: 68px;
+    height: 68px;
+    margin-right: 8px;
+  }
+
+  .value {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding: 68px 40px 100px;
+  }
+
+  .overview-list {
+    margin: 32px 0;
+  }
+
+  .overview-item {
+    padding: 0 14px;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    margin-right: 4px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dashboard {
+    padding: 40px 26px 98px;
+  }
+
+  .userInfo {
+    font-size: 24px;
+  }
+
+  .overview-list {
+    padding: 24px 16px;
+    margin: 24px 0;
+  }
+
+  .overview-item {
+    flex-direction: column;
+    padding: 0 18px;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+
+  .value {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .overview-item {
+    padding: 0 14px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .value {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .overview-list {
+    flex-direction: column;
+    padding: 0 16px;
+    margin: 24px 0;
+  }
+
+  .overview-item {
+    padding: 24px 58px;
+  }
+
+  .overview-item:not(:last-child) {
+    border-right: 0;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .value {
+    font-size: 28px;
+  }
 }

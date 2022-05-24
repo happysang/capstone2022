@@ -40,6 +40,7 @@
 .preview {
   font-weight: 700;
   font-size: 15px;
+  line-height: 28px;
   padding: 0;
   color: #4fe9a4;
 }
@@ -62,4 +63,54 @@
 .preview:hover,
 .remove:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .uploadedImage {
+    padding: 18px 22px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+  }
+
+  .filename {
+    font-size: 16px;
+  }
+
+  .preview {
+    font-size: 14px;
+  }
+
+  .filesize {
+    font-size: 14px;
+    margin-right: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .uploadedImage {
+    padding: 12px 16px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+  }
+
+  .filename {
+    font-size: 14px;
+  }
+
+  .filesize {
+    font-size: 14px;
+    margin-right: 12px;
+  }
+
+  .remove {
+    font-size: 14px;
+  }
 }

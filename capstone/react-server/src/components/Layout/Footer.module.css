@@ -20,7 +20,7 @@
 }
 
 .footer p {
-  width: 450px;
+  max-width: 450px;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -29,4 +29,31 @@
 
 .detail {
   margin-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 46px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  .footer p {
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .detail {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 40px 26px;
+  }
 }

@@ -130,17 +130,11 @@ const LoginForm = () => {
         </div>
         <button className={styles["submit-button"]}>로그인</button>
       </form>
-      <ul className={styles["find-wrapper"]}>
-        <li>
-          <a>비밀번호 찾기</a>
-        </li>
-        <li>
-          <a>이메일 찾기</a>
-        </li>
-        <li>
-          <Link to="/signup">회원가입</Link>
-        </li>
-      </ul>
+
+      <div className={styles["find-wrapper"]}>
+        <Link to="/signup">회원가입</Link>
+      </div>
+
       <div className={styles.terms}>
         <span>
           회원가입 시 brand의 서비스 약관 및<br />
