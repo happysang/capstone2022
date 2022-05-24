@@ -1,4 +1,4 @@
-import logo from "../../assets/images/Logo.png";
+import logo from "../../assets/images/imgLogo.png";
 import Container from "../../UI/Container";
 import styles from "./Footer.module.css";
 

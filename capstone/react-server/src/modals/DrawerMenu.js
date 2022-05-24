@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Drawer from "../UI/Drawer";
 import AuthContext from "../store/auth-context";
 import Button from "../UI/Button";
-import logo from "../assets/images/Logo.png";
+import logo from "../assets/images/imgLogo.png";
 import styles from "./DrawerMenu.module.css";
 
 const DrawerMenu = ({ isOpened, onClose }) => {
@@ -30,7 +30,7 @@ const DrawerMenu = ({ isOpened, onClose }) => {
 
   return (
     <Drawer isOpened={isOpened} onClose={onClose}>
-      <aside>
+      <aside className={styles["drawer-wrapper"]}>
         <div className={styles.logo}>
           <img src={logo} />
         </div>

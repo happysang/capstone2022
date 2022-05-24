@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import logo from "../../assets/images/Logo.png";
+import logo from "../../assets/images/imgLogo.png";
 import iconMenu from "../../assets/icons/iconMenu.png";
 import AuthContext from "../../store/auth-context";
 import Button from "../../UI/Button";

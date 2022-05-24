@@ -13,7 +13,7 @@
 .menu {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 36px;
   left: 30px;
   width: 38px;
   height: 38px;
@@ -35,8 +35,8 @@
 
 .logo {
   display: block;
-  width: 135px;
-  height: auto;
+  width: auto;
+  height: 70px;
 }
 
 .nav {
@@ -82,7 +82,7 @@
   }
 
   .logo {
-    width: 100px;
+    height: 66px;
   }
 
   .list {

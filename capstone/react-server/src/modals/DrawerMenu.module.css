@@ -1,9 +1,11 @@
+.drawer-wrapper {
+  height: 100%;
+}
+
 .logo {
   display: block;
-  width: 110px;
-  height: auto;
+  width: auto;
   margin-bottom: 34px;
-  overflow: hidden;
 }
 
 .logo img {
