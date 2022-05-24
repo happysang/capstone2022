@@ -1,5 +1,5 @@
 .main {
-  padding: 140px;
+  padding: 140px 200px;
   background-color: #fff;
 }
 
@@ -14,12 +14,11 @@
   flex-direction: column;
   text-align: left;
   padding: 30px 0;
-  margin-right: 150px;
 }
 
 .main-right {
-  width: 45%;
-  height: auto;
+  width: auto;
+  height: 360px;
   overflow: hidden;
 }
 
@@ -51,4 +50,124 @@
   line-height: 28px;
   padding: 16px 56px;
   border-radius: 56px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    padding: 100px;
+  }
+
+  .main-left {
+    margin-right: 30px;
+  }
+
+  .main-right {
+    height: 340px;
+  }
+
+  .main-right img {
+    object-fit: contain;
+  }
+
+  .title {
+    width: 320px;
+    font-size: 46px;
+    line-height: 68px;
+    margin-bottom: 30px;
+  }
+
+  .detail {
+    width: 320px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-right {
+    height: 280px;
+  }
+
+  .title {
+    width: 260px;
+    font-size: 38px;
+    line-height: 60px;
+    margin-bottom: 28px;
+  }
+
+  .detail {
+    width: 260px;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .button-60 {
+    width: 168px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 14px 46px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 80px 40px;
+  }
+
+  .main-right {
+    height: 240px;
+  }
+
+  .title {
+    width: 220px;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 16px;
+  }
+
+  .detail {
+    width: 220px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .button-60 {
+    width: 156px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 80px 40px;
+  }
+
+  .main-right {
+    display: none;
+  }
+
+  .title {
+    width: 220px;
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }
+
+  .detail {
+    width: 220px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 46px;
+  }
+
+  .button-60 {
+    width: 134px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px 28px;
+  }
 }

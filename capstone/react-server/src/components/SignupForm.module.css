@@ -90,6 +90,7 @@ select {
   padding: 12px 18px;
   border-radius: 4px;
   font-weight: 700;
+  font-size: 17px;
   transition: all 150ms ease-in-out;
 }
 
@@ -155,4 +156,51 @@ select {
   color: #ff003e;
   font-size: 13px;
   padding-left: 3px;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    margin: 60px 0 100px 0;
+    padding: 0 18px;
+  }
+
+  .form {
+    max-width: 320px;
+  }
+
+  .form h1 {
+    margin-bottom: 24px;
+    font-size: 38px;
+    line-height: 64px;
+  }
+
+  .form .content {
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .wrapper {
+    margin: 50px 0 80px 0;
+  }
+
+  .form h1 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .form .content {
+    margin-bottom: 20px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+  }
 }

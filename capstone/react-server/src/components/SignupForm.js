@@ -1,16 +1,11 @@
 import React, { useState, useContext } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { ReactComponent as IconEye } from "../assets/icons/iconEye.svg";
 import { ReactComponent as IconEyeHidden } from "../assets/icons/iconEyeHidden.svg";
 import AuthContext from "../store/auth-context";
 import styles from "./SignupForm.module.css";
 
-import { fetchPosts } from "../store/auth-actions";
-
 const SignupForm = () => {
-  // const dispatch = useDispatch();
-  // const currstate = useSelector((state) => state.auth.currentState);
   const authCtx = useContext(AuthContext);
   const [enteredName, setEnteredName] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
@@ -40,25 +35,30 @@ const SignupForm = () => {
 
   const [errorMessage, setErrorMessage] = useState("");
 
-  // let formIsVaild = false;
-  let passwordErrorMessage = "";
-
   const checkValidForm = () => {
-    for (let vaild in inputsValidity) {
-      if (inputsValidity[vaild]) return true;
-      else break;
-    }
     setInputsValidity((prevState) => {
       return {
         ...prevState,
-        name: enteredName ? true : false,
-        age: enteredAge ? true : false,
-        gender: enteredGender ? true : false,
-        email: enteredEmail ? true : false,
-        password1: enteredPassword1 ? true : false,
-        password2: enteredPassword2 ? true : false,
+        name: enteredName.length ? true : false,
+        age: enteredAge.length ? true : false,
+        gender: enteredGender.length ? true : false,
+        email: enteredEmail.length ? true : false,
+        password1: enteredPassword1.length ? true : false,
+        password2: enteredPassword2.length ? true : false,
       };
     });
+
+    for (let touch in inputsTouch) {
+      if (inputsTouch[touch]) continue;
+      else return false;
+    }
+
+    for (let vaild in inputsValidity) {
+      console.log(vaild, inputsValidity[vaild]);
+      if (inputsValidity[vaild]) continue;
+      else return false;
+    }
+    return true;
   };
 
   // Change Handler
@@ -200,7 +200,7 @@ const SignupForm = () => {
 
     if (pw.length < 6 || pw.length > 10) {
       setErrorMessage("6자리 ~ 10자리 이내로 입력해주세요.");
-    } else if (pw.search(/\s/) != -1) {
+    } else if (pw.search(/\s/) !== -1) {
       setErrorMessage("비밀번호는 공백없이 입력해주세요.");
     } else if (num < 0 || eng < 0 || spe < 0) {
       setErrorMessage("영문, 숫자, 특수문자를 혼합하여 입력해주세요.");
@@ -209,7 +209,7 @@ const SignupForm = () => {
       vaild = true;
     }
 
-    if (errorMessage || enteredPassword1.trim() === "") {
+    if (!vaild || enteredPassword1.trim() === "") {
       setInputsValidity((prevState) => {
         return {
           ...prevState,
@@ -249,19 +249,10 @@ const SignupForm = () => {
     }
   };
 
-  // const signupHandler = async (userData) => {
-  //   const response = await dispatch(fetchPosts("/auth/signup", userData));
-  //   console.log(response);
-  //   if (response.status === 200) {
-  //     // window.location.href = "/login";
-  //   }
-  // };
-
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("submit");
+
     let formIsVaild = checkValidForm();
-    console.log("formisvaild", formIsVaild);
     if (!formIsVaild) return;
 
     console.log("submit");
@@ -277,9 +268,6 @@ const SignupForm = () => {
     console.log(userData);
 
     authCtx.signup(userData);
-
-    // signupHandler(userData);
-    // console.log(currstate);
   };
 
   const nameControlClasses = `${styles.control} ${

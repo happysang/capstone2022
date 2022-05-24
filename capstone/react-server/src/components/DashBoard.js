@@ -26,7 +26,7 @@ const DashBoard = () => {
     <div className={styles.dashboard}>
       <Container>
         <div>
-          <div>
+          <div className={styles["user-content"]}>
             <div className={styles.userInfo}>Hello, 회원님 👋🏻</div>
             <ul className={styles["overview-list"]}>
               <li className={styles["overview-item"]}>

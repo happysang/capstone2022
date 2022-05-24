@@ -3,9 +3,6 @@
 }
 
 .background {
-  /* background-image: url("../../assets/images/imgCtaBackground.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat; */
   background-color: #0a2640;
   border-radius: 12px;
   padding: 80px 0;
@@ -32,4 +29,89 @@
   line-height: 28px;
   padding: 16px 56px;
   border-radius: 56px;
+}
+
+@media screen and (max-width: 992px) {
+  .cta {
+    padding: 76px 28px;
+  }
+
+  .background {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 58px;
+    margin-bottom: 60px;
+  }
+
+  .button-60 {
+    width: 168px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 14px 46px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    padding: 64px 40px;
+  }
+
+  .background {
+    padding: 56px 0;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 54px;
+  }
+
+  .button-60 {
+    width: 156px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 14px 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cta {
+    padding: 40px 26px;
+  }
+
+  .background {
+    padding: 52px 20px;
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .button-60 {
+    width: 134px;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 12px 28px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .cta {
+    padding: 40px 26px;
+  }
+
+  .background {
+    padding: 48px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
 }
