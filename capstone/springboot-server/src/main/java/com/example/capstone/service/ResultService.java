@@ -52,8 +52,6 @@ public class ResultService {
 
 		original.ifPresent(result -> {
 			// (3) 반환된 ResultEntity가 존재하면 값을 새 entity의 값으로 덮어 씌운다.
-			result.setTitle(entity.getTitle());
-			result.setDone(entity.isDone());
 			result.setOverallData(entity.getOverallData());
 			result.setData1(entity.getData1());
 			result.setData2(entity.getData2());
