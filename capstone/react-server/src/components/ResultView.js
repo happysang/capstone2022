@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import MyResponsiveRadar from "./MyResponsiveRadar";
 import TinySlider from "tiny-slider-react";
 import styles from "./ResultView.module.css";
 import { API_BASE_URL } from "../service/backend-config";
 import datasets from "../result-data.json";
+import AuthContext from "../store/auth-context";
 
 const ResultView = () => {
+  const authCtx = useContext(AuthContext);
+  const {token} = authCtx;
+
+  console.log('token', token);
+
   const [isActive, setActive] = useState("1");
   // const [data, setData] = useState("");
 
@@ -27,7 +33,9 @@ const ResultView = () => {
 
   };
 
-  const obj = {};
+  const obj = {
+    User_id: token
+  };
   const data = resultObj.typeOfScalp.map((val) => 
      val.value
  )
@@ -37,7 +45,7 @@ const ResultView = () => {
  })
 
  console.log(data);
- console.log(obj);
+ console.log('obj', obj);
 
   useEffect(() => {
     // const data = localStorage.getItem("RESULT");

@@ -10,8 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class ResultDTO {
 	private String id;
-	private String title;
-	private boolean done;
 	private String overallData;
 	private String data1;
 	private String data2;
@@ -22,8 +20,6 @@ public class ResultDTO {
 
 	public ResultDTO(final ResultEntity entity) {
 		this.id = entity.getId();
-		this.title = entity.getTitle();
-		this.done = entity.isDone();
 		this.overallData = entity.getOverallData();
 		this.data1 = entity.getData1();
 		this.data2 = entity.getData2();
@@ -36,8 +32,6 @@ public class ResultDTO {
 	public static ResultEntity toEntity(final ResultDTO dto) {
 		return ResultEntity.builder()
 						.id(dto.getId())
-						.title(dto.getTitle())
-						.done(dto.isDone())
 						.overallData(dto.getOverallData())
 						.data1(dto.getData1())
 						.data2(dto.getData2())

@@ -23,8 +23,6 @@ public class ResultEntity {
 	@GenericGenerator(name="system-uuid", strategy = "uuid")
 	private String id;
 	private String userId;
-	private String title;
-	private boolean done;
 	private String overallData;
 	private String data1;
 	private String data2;
