@@ -1,19 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
 import Container from "../UI/Container";
 import iconMessage from "../assets/icons/iconMessage.png";
 import iconMagnifier from "../assets/icons/iconMagnifier.png";
 import styles from "./DashBoard.module.css";
 import MyResponsiveLine from "./MyResponsiveLine";
-import {API_BASE_URL} from '../service/backend-config';
+import { API_BASE_URL } from "../service/backend-config";
+import AuthContext from "../store/auth-context";
 
 const DashBoard = () => {
+  const authCtx = useContext(AuthContext);
+  const { token } = authCtx;
+
   useEffect(() => {
+    let headers = {
+      "Content-Type": "application/json",
+    };
+    if (token && token !== null) {
+      headers = {
+        ...headers,
+        Authorization: "Bearer " + token,
+      };
+      console.log("headers", headers);
+    }
     const api = async () => {
       const response = await fetch(`${API_BASE_URL}/result`, {
         method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers,
       });
 
       const data = await response.json();

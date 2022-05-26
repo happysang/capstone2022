@@ -13,35 +13,19 @@ const UploadForm = () => {
   const [isloaded, setIsLoaded] = useState(false);
   const [isSpinner, setIsSpinner] = useState(false);
   const [fileIsValid, setFileIsValid] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("RESULT", null);
   }, []);
 
-  // useEffect(() => {
-  //   const obj = {
-  //     data: 3,
-  //     name: "userName",
-  //   };
-
-  //   const api = async () => {
-  //     const response = await fetch(`${API_BASE_URL}/result`, {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(obj),
-  //     });
-
-  //     console.log(response);
-  //   };
-
-  //   api();
-  // }, []);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [isSpinner]);
+
+  useEffect(() => {
+    if (error) navigate("/not");
+  }, [error, navigate]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -66,7 +50,12 @@ const UploadForm = () => {
           },
         });
         console.log("res", response);
+        if (response.status === 500) {
+          // setError(true);
+          throw new Error("유효한 사진이 아닙니다.");
+        }
         if (response.status !== 200) {
+          // setError(true);
           throw new Error("에러 발생");
         }
 
@@ -78,6 +67,8 @@ const UploadForm = () => {
         navigate("/result");
       } catch (err) {
         console.error(err);
+        console.log(err);
+        setError(true);
       }
     };
     imgChange();
