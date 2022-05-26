@@ -41,6 +41,8 @@ public class ResultController {
 			// (3) 유저 아이디 설정
 			entity.setUserId(userId);
 
+			System.out.println("entity = " + entity);
+
 			// (4) 서비스를 이용해 Result엔티티를 생성한다.
 			List<ResultEntity> entities = service.create(entity);
 

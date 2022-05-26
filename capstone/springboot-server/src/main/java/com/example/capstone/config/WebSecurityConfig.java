@@ -29,7 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 						.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 				.and()
 				.authorizeRequests() //아래 경로는 인증 안해도 됨.
-						.antMatchers("/", "/auth/**", "/getFlask", "/uploader").permitAll();
+						.antMatchers("/", "/auth/**", "/getFlask").permitAll();
 //				.anyRequest() // /와 /auth/**이외의 모든 경로는 인증 해야됨.
 //						.authenticated();
 
