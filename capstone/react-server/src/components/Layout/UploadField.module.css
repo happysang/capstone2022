@@ -1,15 +1,15 @@
 .uploadField {
-  padding: 100px 100px 200px 100px;
+  padding: 80px 100px 200px 100px;
 }
 
 @media screen and (max-width: 768px) {
   .uploadField {
-    padding: 40px 40px 100px 40px;
+    padding: 70px 40px 100px 40px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .uploadField {
-    padding: 24px 24px 80px 24px;
+    padding: 60px 24px 80px 24px;
   }
 }

@@ -1,5 +1,5 @@
 .main {
-  padding: 140px 200px;
+  padding: 80px 160px;
   background-color: #fff;
 }
 
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 1200px) {
   .main {
-    padding: 100px;
+    padding: 80px 100px;
   }
 
   .main-left {

@@ -1,0 +1,331 @@
+{
+  "dry": {
+    "result": "건성",
+    "summary": "두피의 유·수분 밸런스 조절 두피와 모발에 풍부한 수분을 공급하는 모이스처 라인의 제품으로 보습력을 높여주고, 트리트먼트나 천연 두피팩으로 윤기를 더해 두피의 유·수분 균형을 맞추는 것이 중요합니다.",
+    "treatments": [
+      {
+        "title": "매일 꼼꼼히 두피 마사지할 것",
+        "content": "지성 두피는 피지선 자극을 최소화하기 위해 두피 마사지를 줄여야 하지만, 건성 두피는 반대로 피지선을 자극해 유분을 적당히 분비할 수 있도록 수시로 두피 마사지를 해야 한답니다. 손가락 끝을 이용해 두피 구석구석을 주물러주면 되는데요. 특히 잠들기 전과 샴푸 전후에 효과가 좋습니다. 손가락 마사지가 서툴다면 빗으로 여러 차례 빗어주거나 두피를 톡톡 두드려주세요. 혹은 스트레칭으로 목과 어깨 부분을 풀어주어도 좋습니다. 이 모든 방법은 두피의 혈액순환을 한결 원활하게 해 피지선을 자극하는 것에 도움을 준답니다."
+      },
+      {
+        "title": "두피 토닉, 에센스로 충분한 영양 부여",
+        "content": "건성 두피가 장기간 개선되지 못한다면 유분은 물론 영양분까지 부족하다는 신호입니다. 수시로 에센스나 토닉으로 영양분을 풍부하게 부여해야 하는데요. 두피에서 분비되는 각질 때문에 트러블이 생겼다면 진정 효과가 있는 민트, 티트리, 녹차 성분의 토닉을 사용하고 두피가 건조해 따끔거리거나 화끈거린다면 히알루론산 등을 함유해 효과적으로 수분을 부여할 수 있는 에센스를 사용하는 것이 좋습니다."
+      },
+      {
+        "title": "샴푸는 저자극, 자연 유래 성분 함유 제품으로",
+        "content": "마지막으로 건성 두피는 세정력이 강한 샴푸도 피해야 합니다. 유분기 하나 없이 보송보송한 두피를 만들어주는 샴푸는 건조한 두피를 더욱 메마르게 할 뿐이니까요. 보통 세정력이 강한 샴푸는 산성에 가까운 pH 지수를 띄고 있습니다. pH 지수 5.0에서 6.0 사이의 약산성 제품을 선택한다면 두피에 자극을 최소화할 수 있을 거예요. 더불어 계면활성제, 실리콘, 파라벤, 인공 색소, 인공 향료 등 화학성분이 들어있는 샴푸 또한 두피를 자극하니 화학성분 대신 자연 유래 성분 듬뿍 담은 샴푸를 선택하는 것이 좋습니다."
+      }
+    ],
+    "products": [
+      {
+        "name": "모이스처 샴푸",
+        "brand": "Dr.Medicean",
+        "price": 40500,
+        "url": "http://drmedicean.co.kr/product/%EB%AA%A8%EC%9D%B4%EC%8A%A4%EC%B2%98-%EC%83%B4%ED%91%B8/107/category/169/display/1/",
+        "img": "http://drmedicean.co.kr/web/product/big/202204/298bd92d86433636d301a97ebaf01c8d.jpg"
+      },
+      {
+        "name": "촉촉한 약산성 고체 샴푸 바 (건성모발용)",
+        "brand": "JAJU(자주) X 동구밭",
+        "price": 5700,
+        "url": "https://ohou.se/productions/860189/selling?option_id=6469345&utm_source=naver_shop&utm_medium=cpc&utm_campaign=860189-6469345&utm_term={query}&utm_content={ad}&bp_adset={network}_{media}&NaPm=ct%3Dl3lahpfs%7Cci%3Dbb6261ab98d2f091b7b913c7e29d7eeb35a69724%7Ctr%3Dslct%7Csn%3D760915%7Chk%3Db38da23c8bc35e7b2c3e9516bf63bcdda20ef299",
+        "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162261233709037903.jpg?gif=1&w=850&h=850&c=c"
+      },
+      {
+        "name": "클로란 망고버터 샴푸 (손상 & 건조모발)",
+        "brand": "클로란",
+        "price": 24000,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000154285&chlNo=1&chlDtlNo=1&utm_source=naver&utm_medium=shopping_ep&utm_campaign=onpro_ep_product_0101_1231&utm_content=pc_price&NaPm=ct%3Dl3lalv4o%7Cci%3D50e9cd05e593a92f2094262e72ddec22b9067044%7Ctr%3Dslct%7Csn%3D197658%7Chk%3D2b497a0ec5d66a2b18bea242b2e025dc889f0910",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015428519ko.jpg?l=ko"
+      },
+      {
+        "name": "로픈 바오밥 21차 프리미엄 건성 샴푸",
+        "brand": "로픈",
+        "price": 14900,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000161422&dispCatNo=1000001000700090011&trackingCd=Result_3",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016142201ko.jpg?l=ko"
+      },
+      {
+        "name": "톤28 샴푸바 S19 바오밥나무오일 100g (건성/손상모)",
+        "brand": "톤28",
+        "price": 9900,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=B000000144012&dispCatNo=1000001000400080001&trackingCd=Result_9",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/B00000014401205ko.jpg?l=ko"
+      }
+    ]
+  },
+  "sensitivity": {
+    "result": "민감성",
+    "summary": "민감성 두피의 특징은 각질이 정상인들보다 많이 떨어져 나가거나 스트레스 등의 이유로 인해 두피가 민감해진 상태를 말해요. 두피가 붉다면 민감성 두피일 확률이 높아요. 민감성 두피는 외부의 사소한 자극에도 취약한 유형이에요.",
+    "treatments": [
+      {
+        "title": "자극이 적은 천연 삼푸로",
+        "content": "자극은 최소화하고 청결을 유지하는 데 초점을 두고 관리해야 합니다. 샴푸는 자극이 적은 천연 샴푸를 사용해야 하며 캄퍼, 유칼립투스 등 진정 및 완화 작용을 하는 허브 성분이 들어 있으면 두피 민감성 완화에 도움이 됩니다. 특히 실리콘 같이 머리카락을 부드럽게하는 성분이 들어있는 샴푸는 가려움증이 심해지므로 지양해야 합니다."
+      },
+      {
+        "title": "주변 환경에도 쉽게 영향받는 유형",
+        "content": "외부의 자극적인 물질이나 환경 변화, 알레르기 등에 정상 두피보다 민감하게 반응해 피부염을 일으킬 수 있어 민감성 두피는 외부 환경에도 쉽게 자극을 받으므로 지나치게 춥거나 더운 환경에 노출되는 것을 피하는 것이 좋습니다. 또한 자극적인 음식이나 스트레스는 상태를 악화시키므로 주의해야 합니다."
+      },
+      {
+        "title": "예민하고 가려운 두피 관리법",
+        "content": "잦은 샴푸는 두피나 머리카락을 건조하게 하고 비듬의 원인이 될 수 있으므로 민감성 두피는 이틀에 한번 정도 머리를 감되 되도록 저녁에 감아야 한다. 낮 동안 두피를 막고 있던 오염물질이나 땀, 각질 등을 깨끗이 씻어내야 재생이 활발한 밤 시간에 두피가 영양을 충분히 공급받을 수 있기 때문이다. 머리를 감을 때에는 따뜻한 물로 15분 이상 꼼꼼하게 두피를 씻는다는 느낌으로 감으며 두피를 손톱으로 긁거나 자극을 주지 말고 손가락 끝으로 부드럽게 마사지하듯 감아야 한다."
+      }
+    ],
+    "products": [
+      {
+        "name": "려 자양윤모 민감성두피용 샴푸",
+        "brand": "려",
+        "price": 9900,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000120878&dispCatNo=1000001000400080001&trackingCd=Result_1",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0012/A00000012087803ko.jpg?l=ko"
+      },
+      {
+        "name": "티트리 샴푸(민감성 두피용)",
+        "brand": "우테크람",
+        "price": 20900,
+        "url": "https://ohou.se/productions/437687/selling?affect_type=StoreSearchResult&affect_id=1",
+        "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/159651573228997405.jpg?gif=1&w=850&h=850&c=c"
+      },
+      {
+        "name": "녹차실감 샴푸 민감성 두피 타입",
+        "brand": "아모스프로페셔널",
+        "price": 16800,
+        "url": "https://www.11st.co.kr/products/4269407575?NaPm=ct=l3lbv1o8|ci=f1f3b8c388853ff8aed9c877dc3a4d7186b67d81|tr=slsl|sn=17703|hk=aaa68d872b17edc7acc025419693c4018f5b978d&utm_term=&utm_campaign=%B3%D7%C0%CC%B9%F6pc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B3%D7%C0%CC%B9%F6_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3",
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/22/4/0/7/5/7/5/BTQnD/4269407575_B.jpg"
+      }
+    ]
+  },
+  "dandruff": {
+    "result": "비듬성",
+    "summary": "비듬균의 이상 증식으로 가려움을 동반하고 전체적으로 비듬이 들떠있는 상태의 두피를 비듬성 두피라고 합니다. 일반적으로 비듬이 건조한 형태로 있을 경우 두피 외피의 당김증상이 일어나게 되는데 이때 사람에 따라 두피 당김증이 가려울 수도 있고, 따가울 수 있습니다.",
+    "treatments": [
+      {
+        "title": "하루 1번 머리 감고 두피 마사지하기",
+        "content": "건조한 환절기에는 두피가 푸석해지고 쉽게 각질이 일어난다. 두피에 상존하는 비듬 곰팡이균과 피지는 비듬의 원인이 되므로 매일 저녁 머리를 감아 낮 동안 두피와 모발에 축적된 노폐물과 피지를 씻어내야 한다. 동시에 두피가 건조해지지 않도록 주의해야 한다. 비듬이 있거나 두피가 간지럽다고 하루 한 번을 초과해 머리를 감는 것은 금물이다. 두피와 모발이 필요 이상으로 건조해져 오히려 비듬을 발생시키거나 악화시키기 때문이다. 샴푸할 때 손가락으로 두피를 부드럽게 마사지하면 각질 제거와 혈액순환에 도움이 된다. 말릴 때는 수건으로 툭툭 쳐 물기를 제거하고, 두피가 건조해지지 않도록 찬바람이나 자연바람에 말린다. 다 마르지 않은 상태에서 머리를 묶는 것은 피해야 한다."
+      },
+      {
+        "title": "스트레스·과로·수면부족 피하기",
+        "content": "스트레스·과로·수면부족은 비듬 증상을 악화시키거나 한 번 나아진 비듬을 재발시킬 수 있다. 따라서 비듬 치료 후에도 가능한 이러한 비듬 악화 요인은 피하고 신체 컨디션을 회복하는 것이 좋다.  운동·취미활동 등으로 스트레스를 조절하거나 비타민이 풍부한 과일∙채소를 고루 먹는 것이 도움이 된다.  충분한 수면 역시 중요하다. 이를 지키기 어려운 상황이라면 1~2주에 한 번씩, 한 달에 세 번 약용 샴푸를 사용해 비듬 재발을 방지한다."
+      },
+      {
+        "title": "일주일에 2번 약용 샴푸 사용하기",
+        "content": "비듬 원인균의 증식을 억제하는 항진균 약용샴푸를 3~4일 간격으로 일주일에 두 번 사용하는 것이다. 흔히 알고 있는 니조랄이 대표적이다. 니조랄의 성분인 케토코나졸은 72시간 동안 비듬 원인균을 지속적으로 억제해 비듬 곰팡이의 수치를 정상수준으로 회복시킨다. 이러한 비듬전문치료 약용 샴푸는 약국에서만 구입할 수 있다는 특징이 있다. 남은 5일은 평소처럼 일반 샴푸를 사용하면 된다. 약용 샴푸를 사용할 때 역시 손톱으로 박박 긁어선 안되며, 거품을 충분히 내면서 손가락으로 부드럽게 마사지하는 방법으로 감는 것이 좋다."
+      }
+    ],
+    "products": [
+      {
+        "name": "더마앤모어 판테놀 가려운두피 비듬완화 샴푸",
+        "brand": "애경",
+        "price": 4090,
+        "url": "https://www.11st.co.kr/products/4452421119?NaPm=ct=l3lcmni0|ci=21812f0fd470043b225bc6f05e393fb09ffe4df6|tr=slct|sn=17703|hk=e51283d2e3c7fb7bab9a8b951ebe4869fdc83932&utm_term=&utm_campaign=%B3%D7%C0%CC%B9%F6pc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B3%D7%C0%CC%B9%F6_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3",
+        "img": "http://www.aekyung.co.kr/upload/product/20201029/20201029104335834022.jpg"
+      },
+      {
+        "name": "바이옴 비듬샴푸",
+        "brand": "에퓨놀",
+        "price": 31450,
+        "url": "https://www.11st.co.kr/products/4483433236?NaPm=ct=l3lcb55c|ci=4a328ab93d104ad7e08a00a0fcfccf44bebe45c2|tr=sls|sn=17703|hk=29156e0bd707acdfe7ec1cfc9fcbda90eefb9f46&utm_term=&utm_campaign=%B3%D7%C0%CC%B9%F6pc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B3%D7%C0%CC%B9%F6_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3",
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/v2/4/3/3/2/3/6/MzkGj/4483433236_B.jpg"
+      },
+      {
+        "name": "안티 댄드러프 비듬샴푸",
+        "brand": "아도르",
+        "price": 18000,
+        "url": "https://lador.co.kr/product/%EC%95%88%ED%8B%B0-%EB%8C%84%EB%93%9C%EB%9F%AC%ED%94%84-%EB%B9%84%EB%93%AC%EC%83%B4%ED%91%B8-530ml/190/",
+        "img": "https://lador.co.kr/web/product/small/202203/2a7bfa5ec28fea98a004974a491c7acc.png"
+      }
+    ]
+  },
+  "hairLoss": {
+    "result": "탈모성",
+    "summary": "초기 탈모치료는 피나스테리드 제제나 미녹시딜 제제와 같은 약물치료만으로도 탈모방지와 발모 효과를 볼 수 있다. 다만 모발의 생장주기상 약물치료를 시작한다고 바로 효과를 볼 수 있는 것은 아니기 때문에 최소 3개월 이상의 꾸준한 치료가 중요하다. 탈모는 고혈압, 당뇨병과 같은 만성질환이라 약물치료를 중단하면 다시 탈모가 시작된다. 개인의 차이는 있지만 약물치료를 통해 가시적인 발모효과를 충분히 보기 위해서는 1년 이상 치료하는 것이 효과적입니다.",
+    "treatments": [
+      {
+        "title": "머리감기는 아침보다는 저녁 시간",
+        "content": "탈모가 걱정이라면 머리는 저녁에 감는 것이 좋다. 하루 종일 두피와 모발에 쌓인 먼지와 피지를 자기 전에 제거하는 것이 두피와 모발을 청결히 하는데 도움이 되기 때문이다. 또 아침에 머리를 감고 잘 말리지 않은 상태에서 외출할 경우 차갑고 건조한 바람에 두피와 모발이 더 상할 수 있어 밤에 머리를 감고 두피까지 충분히 잘 말리고 자는 것이 좋다."
+      },
+      {
+        "title": "머리를 감는 샴푸시간은 5분 이내",
+        "content": "탈모는 두피가 아닌 두피 안쪽의 모낭의 기능이 퇴화되며 발생하는 질환으로 샴푸를 너무 오래 하게 되면 계면활성제와 같은 화학성분이 두피를 자극해 두피가 예민해지고 건조해져 오히려 탈모 증상이 악화될 수 있다. 샴푸 시간은 5분 이내로 하고 세정 후에는 깨끗한 물로 두피와 모발에 남은 잔여성분을 꼼꼼히 씻어내도록 한다."
+      },
+      {
+        "title": "7시간 이상 충분한 수면",
+        "content": "동절기에는 부족한 일조량 때문에 숙면을 유도하는 호르몬인 멜라토닌 분비가 줄어들며 수면시간이 부족해지기 쉽다. 굳이 겨울철이 아니더라도 야근 등으로 인한 수면시간 부족은 탈모에 영향을 미칠 수 있다. 머리카락은 부교감신경의 기능이 활성화되어야 성장이 촉진되는데, 수면부족으로 인해 부교감신경의 기능이 떨어지면 모발에 충분한 영양공급이 되지 않으며 모발 건강 상태도 나빠진다. 하루에 7시간 이상 충분히 숙면을 취하는 것이 탈모 예방에 효과적이다. "
+      }
+    ],
+    "products": [
+      {
+        "name": "라보에이치 탈모증상완화 샴푸 400ml + 두피강화 샴푸 50ml",
+        "brand": "아모레퍼시픽",
+        "price": 19210,
+        "url": "https://ohou.se/productions/1174454/selling?affect_type=StoreSearchResult&affect_id=5",
+        "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/165164604524084577.jpg?gif=1&w=850&h=850&c=c"
+      },
+      {
+        "name": "바이옴 비듬샴푸",
+        "brand": "에퓨놀",
+        "price": 31450,
+        "url": "https://www.11st.co.kr/products/4483433236?NaPm=ct=l3lcb55c|ci=4a328ab93d104ad7e08a00a0fcfccf44bebe45c2|tr=sls|sn=17703|hk=29156e0bd707acdfe7ec1cfc9fcbda90eefb9f46&utm_term=&utm_campaign=%B3%D7%C0%CC%B9%F6pc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B3%D7%C0%CC%B9%F6_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3",
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/v2/4/3/3/2/3/6/MzkGj/4483433236_B.jpg"
+      },
+      {
+        "name": "카페인 탈모샴푸 500ml",
+        "brand": "쿤달",
+        "price": 14900,
+        "url": "https://ohou.se/productions/252652/selling?affect_type=StoreSearchResult&affect_id=20",
+        "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/164248270363724227.jpg?gif=1&w=850&h=850&c=c"
+      },
+      {
+        "name": "썬트리 샴푸 500g (탈모증상완화 편백샴푸)",
+        "brand": "헤드스파7",
+        "price": 13230,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164850&dispCatNo=1000001000400080001&trackingCd=Result_11_30",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0016/A00000016485001ko.jpg?l=ko"
+      },
+      {
+        "name": "탈모완화 테라피 샴푸",
+        "brand": "그룬플러스",
+        "price": 37800,
+        "url": "https://www.grunplus.com/shop/sangpum_view.php?part_idx=&ReIdx=24",
+        "img": "https://www.grunplus.com/HyAdmin/upload/goodFile/220220308030002.png"
+      }
+    ]
+  },
+  "oily": {
+    "result": "지성",
+    "summary": "지성두피는 두피에 피지 분비가 왕성해져서 기름이 많이 끼고 두피에 염증이나 발진이 잦아서 머리에서 냄새가 심한 것이 특징입니다. 이런 경우 매일 머리를 감아도 오후가 되면 며칠 안 감은 머리처럼 끈적거리곤 한다. 이런 두피는 비듬과 각질이 피지와 뭉쳐 불쾌한 냄새가 날 뿐만 아니라 세심히 관리하지 않으면 부분적으로 탈모가 일어나기 쉽습니다..",
+    "treatments": [
+      {
+        "title": "미지근한 물로 샴푸할 것",
+        "content": "지성 두피를 관리할 때 가장 중요한 것은 두피의 피지와 노폐물을 말끔하게 씻어내 모공이 숨 쉴 수 있게 만드는 것입니다. 샴푸 시 두피 전체를 손가락 끝으로 살살 문질러가며 구석구석 세정해야 하는데요. 이때 찬물을 사용하면 피지가 응고되어 녹아내리지 않습니다. 미지근한 물을 사용해야 피지를 녹이고 혈액순환을 원활하게 할 수 있죠. 반대로 지나치게 뜨거운 물을 사용하면 자극을 더해 두피를 더욱 예민하게 할 수도 있으니 주의해야 합니다."
+      },
+      {
+        "title": "잦은 두피 마사지는 과다한 피지를 유발해",
+        "content": "탈모를 예방하기 위한 쉬운 방법 중 하나가 두피 마사지죠. 두피를 꾸준하게 마사지해 주면 혈액순환이 원활해지고 모낭에서 영양분을 효과적으로 흡수하기 때문입니다. 하지만 지성 두피를 가진 사람이라면 마사지를 멀리해야 합니다. 과도한 마사지는 두피의 피지선을 자극해 피지 분비를 더욱 유발하기 때문입니다. 지성 두피에는 마사지보다는 스케일링 효과를 지닌 토닉이나 헤어팩을 해 주는 것이 훨씬 도움이 된답니다."
+      },
+      {
+        "title": "맵고 짠 음식은 지성 두피의 적",
+        "content": "맵고 짠 음식도 지성 두피에는 악영향을 미칠 수 있습니다. 맵고 짠 음식은 피지 분비를 유발해 피지 분비는 물론 트러블까지 일으킬 수 있습니다. 맵고 짠 음식은 비단 지성 두피뿐만 아니라 건강에도 좋지 않으니 피하는 것이 좋겠죠?"
+      }
+    ],
+    "products": [
+      {
+        "name": "티트리 앤 마카다미아 딥 클렌징 지성샴푸",
+        "brand": "쿤달",
+        "price": 7900,
+        "url": "https://ohou.se/productions/279046/selling?affect_type=StoreSearchResult&affect_id=3",
+        "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/164247213146046351.jpg?gif=1&w=850&h=850&c=c"
+      },
+      {
+        "name": "아쿠아민트 쿨세범 드라이샴푸 150ml (지성두피&쿨링)",
+        "brand": "클로란",
+        "price": 11200,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000141612&dispCatNo=1000001000400080001&trackingCd=Result_2",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014161227ko.jpg?l=ko"
+      },
+      {
+        "name": "퍼퓸 프레쉬 샴푸 750ml (지성두피케어)",
+        "brand": "헤드앤숄더",
+        "price": 7900,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000149299&dispCatNo=1000001000400080001&trackingCd=Result_5",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0014/A00000014929905ko.jpg?l=ko"
+      },
+      {
+        "name": "알파비오틴 지성두피 탈모샴푸",
+        "brand": "브로앤팁스",
+        "price": 21000,
+        "url": "https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000155027&dispCatNo=1000001000700090006&trackingCd=Result_11_30",
+        "img": "https://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0015/A00000015502701ko.jpg?l=ko"
+      },
+      {
+        "name": "올바른 샴푸바 지성용",
+        "brand": "동구밭",
+        "price": 9500,
+        "url": "https://www.donggubat.co.kr/goods/goods_view.php?goodsNo=1000000011&mtn=7%5E%7C%5E%EB%B2%A0%EC%8A%A4%ED%8A%B8%EC%83%81%ED%92%88%5E%7C%5En",
+        "img": "https://www.donggubat.co.kr/data/goods/20/12/53/1000000011/1000000011_detail_011.png"
+      }
+    ]
+  },
+  "seborrheid": {
+    "result": "지루성",
+    "summary": "지루성 두피는 두피가 붉고, 비듬이 존재하며 두피를 눌렀을 때 통증과 가려움이 존재하는 것이 특징입니다. 염증이 심해지면 모낭과 모발 영양 상태가 악화되고, 머리가 푸석푸석해져서 탈모가 생길 수 있습니다. 특히 얼굴에 여드름이 잘 생기는 사람에게서 지루성 두피염이 더 많이 발생합니다. 지루성 두피염을 개선하는 것은 곧 탈모 예방법이 되기 때문에 잘 관리해야 합니다.",
+    "treatments": [
+      {
+        "title": "밤에 한번, 미지근한 물로 시작해서 시원한 물로 마무리",
+        "content": "시간과 횟수는 밤에 자기 전에 한번 감는 것이 좋습니다. 탈모량이 많은 경우에는 머리를 감으면서 빠지는 경우가 많기 때문에 특히 주의해야 합니다. 물 온도는 미지근한 정도로 하고 염증이 있는 경우는 마지막엔 찬물로 해주는 것이 좋습니다. 샴푸로 적당히 거품을 낸 다음 손톱이 아닌 지문부위로 문지르면서 샴푸를 바릅니다. 최근에 나오는 기능성 샴푸들은 두피에 바른 뒤 5분 정도는 방치하는 게 기본이기 때문에 샤워하는 중에 감을 때는 먼저 샴푸질을 하고 몸을 닦은 후 머리를 마지막에 헹구는 것이 좋습니다."
+      },
+      {
+        "title": "두피보다 모발 쪽으로 서늘한 바람이 좋아",
+        "content": "드라이기의 뜨거운 바람이 두피로 직접 닿는 것은 너무 건조하게 만들 수 있으니 바람이 두피를 빗겨 타고 모발에 닿도록 향하는 게 좋습니다. 밤에 자기 전에 머리를 감고 말리지 않고 자게 되면 습윤한 환경에서 모낭충이 번식하기 쉽기 때문에 말리고 자는 습관을 들여야 합니다. 밤에 감지 않고 자게 되면 두피와 모공에 불순물이 붙은 채로 반나절을 보내는 것이 두피에는 좋지 않습니다."
+      },
+      {
+        "title": "흡연, 매운 음식, 불규칙한 수면을 피해야",
+        "content": "담배만큼 몸을 건조하게 만드는 게 없습니다. 오죽하면 비만환자들이 담배를 피우면 살이 빠질까요. 혈액의 질을 떨어뜨려 두피염을 가속화하고 탈모로 이어지기 쉽습니다. 매운 음식으로 두면부를 뜨겁게 달구는 것은 탈모에 악영향을 줍니다. 음식은 담담하고 소화가 잘되는 것을 먹어야합니다. 성장기 어린이는 잠을 잘 때 키가 크고 성인은 잠을 자서 종일 노동에 지친 육체가 휴식을 취하고 다시 태어나게 됩니다. 충분한 휴식의 시작은 규칙적인 수면입니다."
+      }
+    ],
+    "products": [
+      {
+        "name": "세보샴푸 500g",
+        "brand": "볼빅",
+        "price": 76300,
+        "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
+        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+      },
+      {
+        "name": "세비프록스",
+        "brand": "약국에서 구매 가능(일반의약품)",
+        "price": 0,
+        "url": "",
+        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+      },
+      {
+        "name": "댄트롤 딥 클린 프레쉬 820ml",
+        "brand": "아모레퍼시픽",
+        "price": 5950,
+        "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
+        "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+      }
+    ]
+  },
+  "inflammatory": {
+    "result": "염증성",
+    "summary": "서구식 식생활, 자극적인 음식 섭취 등으로 증가하고 있는 ‘지루성 두피염’이 대표적입니다. 지루성 두피는 보통 피지 분비량이 유난히 많아서 금방 두피와 모발이 기름집니다. 염증과 가려움증이 나타났다가 개선되기를 반복하기 때문에 긁다가 증상이 사라지면 방치하는 경우가 많습니다. 지루성 두피염은 이 같은 과정을 밟으며, 결국 잘 낫지 않는 고질병으로 악화됩니다. 증상이 심해지면 모낭염을 부르고, 탈모로도 이어질 수 있습니다.",
+    "treatments": [
+      {
+        "title": "샴푸 후 자연건조보다 빨리 드라이 하는 게 좋다",
+        "content": "지루성 두피염은 두피와 모발에 습기가 많을 경우 증상이 더 악화되기 쉽습니다. 그래서 샴푸 후에는 드라이로 바로 두피와 모발을 말려주는 게 좋습니다. 드라이할 때 바람의 온도는 너무 뜨겁지만 않으면 되며, 모발이 긴 분들은 두피와 가까운 부위만이라도 습기를 제거해줘야 합니다. 특히 비듬이 있을수록 두피의 습기를 빨리 제거해줘야 합니다."
+      },
+      {
+        "title": "베개 커버만 자주 바꿔줘도 도움이 된다!",
+        "content": "잠자는 동안 두피와 얼굴에 계속 닿아있는 베개 커버는 의외로 많은 수의 세균들이 살고 있습니다. 변기 커버의 약 10배의 세균이 존재한다는 연구보고도 있습니다. 이 중에는 두피나 얼굴에 나쁜 영향을 주는 병원성 세균들도 존재합니다. 자는 동안 피지와 땀, 침 등이 계속 묻는데다 체온 탓에 균이 번식하기 좋은 온도가 돼서 베개 커버에 다양한 세균들이 존재하는 것입니다. 때문에 베개 커버를 자주 바꿔줄수록 두피와 얼굴의 지루성 피부염 개선에 도움이 됩니다. 2~3일에 한 번씩 세탁해서 바꿔주는 걸 추천합니다."
+      },
+      {
+        "title": "증상 완화에 목표를 두어야",
+        "content": "지루성 두피염이 있는데 머리를 잘 감지 않고, 두피가 간지럽다고 손으로 긁으며, 샴푸를 깨끗이 씻어내지 않으면 증상이 더 심해집니다. 지루성 두피염은 단순히 샴푸나 생활습관 교정만으로 나아지기 힘든 경우도 많습니다. 제대로 관리하지 않는 경우가 많습니다. 결국 지루성 두피염이 만성화돼 잘 낫지 않는 고질병으로 악화됩니다. 특히 지루성 두피염이 10~20년 이상 지속되는 사람도 많습니다. 지루성 두피염의 원인은 복합적이어서 완치보다 증상 완화에 목적을 두는 것이 바람직합니다."
+      }
+    ],
+    "products": [
+      {
+        "name": "세보샴푸 500g",
+        "brand": "볼빅",
+        "price": 76300,
+        "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
+        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+      },
+      {
+        "name": "세비프록스",
+        "brand": "약국에서 구매 가능(일반의약품)",
+        "price": 0,
+        "url": "",
+        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+      },
+      {
+        "name": "댄트롤 딥 클린 프레쉬 820ml",
+        "brand": "아모레퍼시픽",
+        "price": 5950,
+        "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
+        "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+      }
+    ]
+  }
+}

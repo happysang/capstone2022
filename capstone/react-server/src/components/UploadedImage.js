@@ -7,6 +7,8 @@ const UploadedImage = ({ file, onClickRemove }) => {
   const [previewIsShown, setPreviewIsShown] = useState(false);
   const [imgUrl, setImgUrl] = useState("");
 
+  const fileSize = parseInt(file.size * 0.001).toLocaleString();
+
   const showPreviewImageHandler = () => {
     setPreviewIsShown(true);
 
@@ -36,7 +38,7 @@ const UploadedImage = ({ file, onClickRemove }) => {
           <PreviewImage url={imgUrl} onClose={hidePreviewImageHandler} />
         )}
       </div>
-      <p className={styles.filesize}>{file.size}</p>
+      <p className={styles.filesize}>{fileSize}KB</p>
       <button className={styles.remove} onClick={onClickRemove} type="button">
         삭제
       </button>
