@@ -7,10 +7,10 @@ import datasets from "../result-data.json";
 import AuthContext from "../store/auth-context";
 
 const ResultView = () => {
-  const authCtx = useContext(AuthContext);
-  const { id } = authCtx;
+  const [userResult, setUserResult] = useState("");
   const [isActive, setActive] = useState("1");
-  // const [data, setData] = useState("");
+  const authCtx = useContext(AuthContext);
+  const { token, id } = authCtx;
 
   const localstorage = JSON.parse(localStorage.getItem("RESULT"));
   const resultObj = {
@@ -19,8 +19,12 @@ const ResultView = () => {
     typeOfScalp: localstorage.typeOfScalp,
   };
   const type = resultObj.result; // 진단 결과 타입
-  console.log("res", resultObj);
-  console.log(type);
+  // console.log("res", resultObj);
+  // console.log(type);
+
+  if (type !== userResult) {
+    setUserResult(type);
+  }
 
   const markHandler = (e) => {
     const markNum = e.target.dataset.slide;
@@ -29,7 +33,7 @@ const ResultView = () => {
     setActive(markNum);
   };
 
-  console.log("id", id);
+  // console.log("id", id);
 
   const obj = {
     user_id: id,
@@ -40,19 +44,24 @@ const ResultView = () => {
     obj[`data${idx + 1}`] = val || 0;
   });
 
-  console.log(data);
+  // console.log(data);
   console.log(obj);
 
   useEffect(() => {
-    // const data = localStorage.getItem("RESULT");
-
+    let headers = {
+      "Content-Type": "application/json",
+    };
+    if (token && token !== null) {
+      headers = {
+        ...headers,
+        Authorization: "Bearer " + token,
+      };
+    }
     const api = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/result`, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers,
           body: JSON.stringify(obj),
         });
 
@@ -65,7 +74,8 @@ const ResultView = () => {
     };
 
     api();
-  }, []);
+    console.log("aaa"); //랜더링 확인
+  }, [userResult]);
 
   const resultData = datasets[type];
   const { result } = resultData;

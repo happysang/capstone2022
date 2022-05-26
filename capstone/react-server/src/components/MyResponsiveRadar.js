@@ -3,15 +3,7 @@ import React, { useState } from "react";
 import styles from "./MyResponsiveRadar.module.css";
 
 const MyResponsiveRadar = ({ data }) => {
-  // const [errorMessage, setErrorMeesage] = useState("");
-
-  // const resultObj = JSON.parse(localStorage.getItem("RESULT"));
-  // if (!resultObj) setErrorMeesage("에러 발생");
-
-  // if (errorMessage) console.log(errorMessage);
-
   const resultData = data.typeOfScalp.map((item) => {
-    console.log(item);
     return {
       type: item.type,
       user: item.value,
