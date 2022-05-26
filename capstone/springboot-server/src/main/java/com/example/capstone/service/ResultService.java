@@ -53,12 +53,13 @@ public class ResultService {
 		original.ifPresent(result -> {
 			// (3) 반환된 ResultEntity가 존재하면 값을 새 entity의 값으로 덮어 씌운다.
 			result.setOverallData(entity.getOverallData());
-			result.setData1(entity.getData1());
+			result.setData1(entity.getData1()); //.
 			result.setData2(entity.getData2());
 			result.setData3(entity.getData3());
 			result.setData4(entity.getData4());
 			result.setData5(entity.getData5());
 			result.setData6(entity.getData6());
+			result.setDate(entity.getDate());
 			// (4) 데이터베이스에 새 값을 저장한다.
 			repository.save(result);
 		});

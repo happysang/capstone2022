@@ -24,10 +24,11 @@ public class ResultEntity {
 	private String id;
 	private String userId;
 	private String overallData;
-	private String data1;
+	private String data1; //.
 	private String data2;
 	private String data3;
 	private String data4;
 	private String data5;
 	private String data6;
+	private String date;
 }
