@@ -8,10 +8,7 @@ import AuthContext from "../store/auth-context";
 
 const ResultView = () => {
   const authCtx = useContext(AuthContext);
-  const {token} = authCtx;
-
-  console.log('token', token);
-
+  const { id } = authCtx;
   const [isActive, setActive] = useState("1");
   // const [data, setData] = useState("");
 
@@ -22,7 +19,7 @@ const ResultView = () => {
     typeOfScalp: localstorage.typeOfScalp,
   };
   const type = resultObj.result; // 진단 결과 타입
-  console.log('res', resultObj);
+  console.log("res", resultObj);
   console.log(type);
 
   const markHandler = (e) => {
@@ -30,22 +27,21 @@ const ResultView = () => {
     console.log(markNum);
     console.log(`${isActive === String(1) ? "isActive" : "none"}`);
     setActive(markNum);
-
   };
+
+  console.log("id", id);
 
   const obj = {
-    User_id: token
+    user_id: id,
   };
-  const data = resultObj.typeOfScalp.map((val) => 
-     val.value
- )
+  const data = resultObj.typeOfScalp.map((val) => val.value);
 
- data.forEach((val, idx) => {
-   obj[`data${idx+1}`] = val || 0;
- })
+  data.forEach((val, idx) => {
+    obj[`data${idx + 1}`] = val || 0;
+  });
 
- console.log(data);
- console.log('obj', obj);
+  console.log(data);
+  console.log(obj);
 
   useEffect(() => {
     // const data = localStorage.getItem("RESULT");

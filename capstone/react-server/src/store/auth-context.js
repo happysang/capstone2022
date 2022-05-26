@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { API_BASE_URL } from "../service/backend-config";
 const ACCESS_TOKEN = "ACCESS_TOKEN";
+const USER_ID = "USER_ID";
 
 const AuthContext = React.createContext({
   token: "",
+  id: "",
   isLoggedIn: false,
   signup: () => {},
   login: (userData) => {},
@@ -56,14 +58,21 @@ export const AuthContextProvider = (props) => {
     localStorage.getItem("ACCESS_TOKEN") === "null"
       ? false
       : localStorage.getItem("ACCESS_TOKEN");
+  const idData =
+    localStorage.getItem("USER_ID") === "null"
+      ? false
+      : localStorage.getItem("USER_ID");
   let initialToken = null;
+  let initialId = null;
   let isLoggedIn = !!tokenData;
 
   if (tokenData) {
     initialToken = tokenData;
+    initialId = idData;
   }
 
   const [token, setToken] = useState("");
+  const [id, setId] = useState("");
 
   const logoutHandler = () => {
     localStorage.setItem(ACCESS_TOKEN, null);
@@ -71,8 +80,13 @@ export const AuthContextProvider = (props) => {
       localStorage.getItem("ACCESS_TOKEN") === "null"
         ? false
         : localStorage.getItem("ACCESS_TOKEN");
+    const idData =
+      localStorage.getItem("USER_ID") === "null"
+        ? false
+        : localStorage.getItem("USER_ID");
 
     setToken(tokenData);
+    setId(idData);
 
     if (isLoggedIn) {
       window.location.href = "/";
@@ -82,12 +96,15 @@ export const AuthContextProvider = (props) => {
   };
 
   const loginHandler = async (userData) => {
-    const { token } = await call("/auth/signin", userData, true);
+    const { token, id } = await call("/auth/signin", userData, true);
     console.log(token);
+    console.log(id);
     setToken(token);
+    setId(id);
 
     if (token) {
       localStorage.setItem(ACCESS_TOKEN, token);
+      localStorage.setItem(USER_ID, id);
       window.location.href = "/";
     }
   };
@@ -101,6 +118,7 @@ export const AuthContextProvider = (props) => {
 
   const contextValue = {
     token: token || initialToken,
+    id: id || initialId,
     isLoggedIn,
     login: loginHandler,
     logout: logoutHandler,
