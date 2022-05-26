@@ -7,7 +7,7 @@ import datasets from "../result-data.json";
 
 const ResultView = () => {
   const [isActive, setActive] = useState("1");
-  const [data, setData] = useState("");
+  // const [data, setData] = useState("");
 
   const localstorage = JSON.parse(localStorage.getItem("RESULT"));
   const resultObj = {
@@ -16,7 +16,7 @@ const ResultView = () => {
     typeOfScalp: localstorage.typeOfScalp,
   };
   const type = resultObj.result; // 진단 결과 타입
-  console.log(resultObj);
+  console.log('res', resultObj);
   console.log(type);
 
   const markHandler = (e) => {
@@ -24,10 +24,24 @@ const ResultView = () => {
     console.log(markNum);
     console.log(`${isActive === String(1) ? "isActive" : "none"}`);
     setActive(markNum);
+
   };
+
+  const obj = {};
+  const data = resultObj.typeOfScalp.map((val) => 
+     val.value
+ )
+
+ data.forEach((val, idx) => {
+   obj[`data${idx+1}`] = val || 0;
+ })
+
+ console.log(data);
+ console.log(obj);
 
   useEffect(() => {
     // const data = localStorage.getItem("RESULT");
+
     const api = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/result`, {
@@ -35,7 +49,7 @@ const ResultView = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(resultObj),
+          body: JSON.stringify(obj),
         });
 
         if (!response.ok) {
