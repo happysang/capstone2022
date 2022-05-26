@@ -10,7 +10,7 @@ cors = CORS(app , resources={r"/*": {"origins": "*", "allow_headers": "*", "expo
 def upload_file():
     return render_template("getimage.html")
 
-hobe = HobeAI(mode='Test',pretrained_path='D:/capstone2022/capstone/flask-server/flask/save_model',debug=True)
+hobe = HobeAI(mode='Demo',pretrained_path='../save_model',debug=True)
 @app.route("/tospring")
 def spring():
     result = hobe.process(image=None)
@@ -24,6 +24,7 @@ def test():
         file = request.files.get('file')
         state = request.form.get('state')
         img = Image.open(file.stream)
+        print(file,state,img)
         wrap_dict = hobe.process(image=img)
         return jsonify(wrap_dict)
 

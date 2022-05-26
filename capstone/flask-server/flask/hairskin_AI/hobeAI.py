@@ -29,9 +29,9 @@ class HobeAI():
         self.pretrained_path_list = None
         self.mode = mode
 
-        if mode == 'Test':
-            self.pretrained_root = pretrained_path
-            self.pretrained_path_list = os.listdir(self.pretrained_root)
+        # if mode == 'Test':
+        self.pretrained_root = pretrained_path
+        self.pretrained_path_list = os.listdir(self.pretrained_root)
 
 
         self.main_transforms = transforms.Compose([
@@ -67,7 +67,7 @@ class HobeAI():
             wrap_dict['typeOfScalp'] = list()
             wrap_dict['User_ID'] = 'DummyTestID_qorgh346'
 
-            img = Image.open(image)
+            img = image
             img = self.main_transforms(img).unsqueeze(dim=0)
             for name,model in self.model_list:
                 output = dict()
@@ -100,7 +100,7 @@ class HobeAI():
         #Local에 저장된 이미지를 불러와 테스트 해보는 코드
         #플라스크 단독 데모 가능
         #이미지 폴더 주소 적기
-        image_root = 'D:/capstone2022/capstone/flask-server/flask/test_image'
+        image_root = '../test_image'
         image_list = os.listdir(image_root)
         wrap_dict = dict()
 
