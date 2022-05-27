@@ -146,3 +146,42 @@
     opacity: 1;
   }
 }
+
+.loading {
+  padding: 20px 38px;
+  border-radius: 10px;
+  background-color: #4fe9a4;
+  -webkit-animation: blink 1s ease-in-out infinite alternate;
+  -moz-animation: blink 1s ease-in-out infinite alternate;
+  animation: blink 1s ease-in-out infinite alternate;
+}
+
+.loading p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

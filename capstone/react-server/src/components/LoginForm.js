@@ -137,7 +137,7 @@ const LoginForm = () => {
 
       <div className={styles.terms}>
         <span>
-          회원가입 시 brand의 서비스 약관 및<br />
+          회원가입 시 ysl의 서비스 약관 및<br />
           개인정보 처리방침을 확인하였으며, 동의합니다.
         </span>
       </div>

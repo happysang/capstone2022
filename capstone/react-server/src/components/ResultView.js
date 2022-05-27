@@ -34,9 +34,21 @@ const ResultView = () => {
   };
 
   // console.log("id", id);
+  let today = new Date();
+
+  let year = String(today.getFullYear()).slice(2); // 년도
+  let month = today.getMonth() + 1; // 월
+  let date = today.getDate(); // 날짜
+  let hours = ("0" + today.getHours()).slice(-2);
+  let minutes = ("0" + today.getMinutes()).slice(-2);
+  let seconds = ("0" + today.getSeconds()).slice(-2);
+
+  let inspectionDate = `${year}/${month}/${date} ${hours}:${minutes}:${seconds}`;
 
   const obj = {
     user_id: id,
+    date: inspectionDate,
+    overallData: resultObj.result,
   };
   const data = resultObj.typeOfScalp.map((val) => val.value);
 

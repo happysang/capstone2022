@@ -1,7 +1,7 @@
 {
   "dry": {
     "result": "건성",
-    "summary": "두피의 유·수분 밸런스 조절 두피와 모발에 풍부한 수분을 공급하는 모이스처 라인의 제품으로 보습력을 높여주고, 트리트먼트나 천연 두피팩으로 윤기를 더해 두피의 유·수분 균형을 맞추는 것이 중요합니다.",
+    "summary": "건성 두피는 마치 마른 땅처럼 건조하고 각질과 비듬 조각들이 하얗게 끼어 있는 것이 특징입니다. 각질이 정상적으로 생성 탈락되지 않고 두피에 쌓이게 되면서 비듬이 생길 수 있습니다. 따라서 두피의 유·수분 밸런스 조절 두피와 모발에 풍부한 수분을 공급하는 모이스처 라인의 제품으로 보습력을 높여주고, 트리트먼트나 천연 두피팩으로 윤기를 더해 두피의 유·수분 균형을 맞추는 것이 중요합니다.",
     "treatments": [
       {
         "title": "매일 꼼꼼히 두피 마사지할 것",
@@ -22,7 +22,14 @@
         "brand": "Dr.Medicean",
         "price": 40500,
         "url": "http://drmedicean.co.kr/product/%EB%AA%A8%EC%9D%B4%EC%8A%A4%EC%B2%98-%EC%83%B4%ED%91%B8/107/category/169/display/1/",
-        "img": "http://drmedicean.co.kr/web/product/big/202204/298bd92d86433636d301a97ebaf01c8d.jpg"
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/v2/9/1/8/7/1/7/YLtAL/4462918717_B.jpg"
+      },
+      {
+        "name": "천연 다시마샴푸",
+        "brand": "청미정",
+        "price": 28500,
+        "url": "http://ncmj.co.kr/product/%EC%B2%AD%EB%AF%B8%EC%A0%95-%EC%B2%9C%EC%97%B0-%EB%8B%A4%EC%8B%9C%EB%A7%88%EC%83%B4%ED%91%B8/322/",
+        "img": "https://shopping-phinf.pstatic.net/main_1302341/13023412774.20220329144959.jpg?type=f640"
       },
       {
         "name": "촉촉한 약산성 고체 샴푸 바 (건성모발용)",
@@ -56,7 +63,7 @@
   },
   "sensitive": {
     "result": "민감성",
-    "summary": "민감성 두피의 특징은 각질이 정상인들보다 많이 떨어져 나가거나 스트레스 등의 이유로 인해 두피가 민감해진 상태를 말해요. 두피가 붉다면 민감성 두피일 확률이 높아요. 민감성 두피는 외부의 사소한 자극에도 취약한 유형이에요.",
+    "summary": "민감성 두피의 특징은 각질이 정상인들보다 많이 떨어져 나가거나 스트레스 등의 이유로 인해 두피가 민감해진 상태를 말해요. 두피가 붉다면 민감성 두피일 확률이 높습니다. 또한 외부의 사소한 자극에도 취약한 유형입니다. 외부에서 약간의 물리적 화학적 자극만 주어도 두피의 유형이 지성화 또는 건성화로 발전하거나, 육안으로 보기에는 면포와 같은 염증성 현상과 알레르기성 증상인 수포현상을 보이는 두피 형태입니다.",
     "treatments": [
       {
         "title": "자극이 적은 천연 삼푸로",
@@ -87,17 +94,31 @@
         "img": "https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/159651573228997405.jpg?gif=1&w=850&h=850&c=c"
       },
       {
-        "name": "녹차실감 샴푸 민감성 두피 타입",
+        "name": "녹차실감 샴푸(민감성 두피 타입)",
         "brand": "아모스프로페셔널",
         "price": 16800,
         "url": "https://www.11st.co.kr/products/4269407575?NaPm=ct=l3lbv1o8|ci=f1f3b8c388853ff8aed9c877dc3a4d7186b67d81|tr=slsl|sn=17703|hk=aaa68d872b17edc7acc025419693c4018f5b978d&utm_term=&utm_campaign=%B3%D7%C0%CC%B9%F6pc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B3%D7%C0%CC%B9%F6_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3",
         "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/22/4/0/7/5/7/5/BTQnD/4269407575_B.jpg"
+      },
+      {
+        "name": "티트리 샴푸",
+        "brand": "아발론 오가닉스(Avalon Organics)",
+        "price": 22534,
+        "url": "https://kr.iherb.com/pr/avalon-organics-shampoo-scalp-treatment-tea-tree-32-fl-oz-946-ml/58557?gclid=CjwKCAjw7cGUBhA9EiwArBAvonIoshw2wg8VTNP22_THM45h1bMhvjSD3p7IEkEXly-lq_R_FSCathoCVPoQAvD_BwE&gclsrc=aw.ds",
+        "img": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/ava/ava36128/l/15.jpg"
+      },
+      {
+        "name": "퍼스티지 카미시 샴푸",
+        "brand": "ATS",
+        "price": 22534,
+        "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000039862698&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&NaPm=ct%3Dl3o93ryo%7Cci%3D850a7f167d295bbce8a732657be67ed0d28a7001%7Ctr%3Dslsc%7Csn%3D218835%7Chk%3D7fad01dd5b1953b6c7ca47488d45c9d85994ca5f",
+        "img": "https://shopping-phinf.pstatic.net/main_3135367/31353671620.20220317171516.jpg?type=f640"
       }
     ]
   },
   "dandruff": {
     "result": "비듬성",
-    "summary": "비듬균의 이상 증식으로 가려움을 동반하고 전체적으로 비듬이 들떠있는 상태의 두피를 비듬성 두피라고 합니다. 일반적으로 비듬이 건조한 형태로 있을 경우 두피 외피의 당김증상이 일어나게 되는데 이때 사람에 따라 두피 당김증이 가려울 수도 있고, 따가울 수 있습니다.",
+    "summary": "비듬균의 이상 증식으로 가려움을 동반하고 전체적으로 비듬이 들떠있는 상태의 두피를 비듬성 두피라고 합니다. 일반적으로 비듬이 건조한 형태로 있을 경우 두피 외피의 당김증상이 일어나게 되는데 이때 사람에 따라 두피 당김증이 가려울 수도 있고, 따가울 수 있습니다. 비듬은 크게 건성과 지성으로 구분되어지며 관리시기가 늦추어 질 경우 염증 및 탈모로 이어질 수 있습니다.",
     "treatments": [
       {
         "title": "하루 1번 머리 감고 두피 마사지하기",
@@ -132,7 +153,14 @@
         "brand": "아도르",
         "price": 18000,
         "url": "https://lador.co.kr/product/%EC%95%88%ED%8B%B0-%EB%8C%84%EB%93%9C%EB%9F%AC%ED%94%84-%EB%B9%84%EB%93%AC%EC%83%B4%ED%91%B8-530ml/190/",
-        "img": "https://lador.co.kr/web/product/small/202203/2a7bfa5ec28fea98a004974a491c7acc.png"
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/pd/21/2/7/7/0/3/6/Fvlct/2299277036_B.jpg"
+      },
+      {
+        "name": "니조랄",
+        "brand": "약국에서 구매 가능(일반의약품)",
+        "price": 0,
+        "url": "#",
+        "img": "https://dimg.donga.com/a/227/0/90/5/wps/NEWS/IMAGE/2020/09/15/102919687.6.jpg"
       }
     ]
   },
@@ -248,7 +276,7 @@
   },
   "seborrheric": {
     "result": "지루성",
-    "summary": "지루성 두피는 두피가 붉고, 비듬이 존재하며 두피를 눌렀을 때 통증과 가려움이 존재하는 것이 특징입니다. 염증이 심해지면 모낭과 모발 영양 상태가 악화되고, 머리가 푸석푸석해져서 탈모가 생길 수 있습니다. 특히 얼굴에 여드름이 잘 생기는 사람에게서 지루성 두피염이 더 많이 발생합니다. 지루성 두피염을 개선하는 것은 곧 탈모 예방법이 되기 때문에 잘 관리해야 합니다.",
+    "summary": "지루성 두피는 두피가 붉고, 비듬이 존재하며 두피를 눌렀을 때 통증과 가려움이 존재하는 것이 특징입니다. 염증과 가려움증이 동반하며 개선과 악화를 반복하다가 염증이 심해지면 모낭과 모발 영양 상태가 악화되고, 머리가 푸석푸석해져서 탈모가 생길 수 있습니다. 특히 얼굴에 여드름이 잘 생기는 사람에게서 지루성 두피염이 더 많이 발생합니다. 지루성 두피염을 개선하는 것은 곧 탈모 예방법이 되기 때문에 잘 관리해야 합니다.",
     "treatments": [
       {
         "title": "밤에 한번, 미지근한 물로 시작해서 시원한 물로 마무리",
@@ -269,14 +297,14 @@
         "brand": "볼빅",
         "price": 76300,
         "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
-        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+        "img": "http://img.danawa.com/prod_img/500000/898/343/img/10343898_1.jpg?shrink=500:500&_v=20200324133710"
       },
       {
         "name": "세비프록스",
         "brand": "약국에서 구매 가능(일반의약품)",
         "price": 0,
-        "url": "",
-        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+        "url": "#",
+        "img": "https://img.khan.co.kr/news/2009/11/09/20091109001043_r.webp"
       },
       {
         "name": "댄트롤 딥 클린 프레쉬 820ml",
@@ -284,6 +312,20 @@
         "price": 5950,
         "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
         "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+      },
+      {
+        "name": "보너스 샴푸 400ml",
+        "brand": "미리미리",
+        "price": 25000,
+        "url": "https://mirimiri.kr/scalp-and-hair/?idx=6",
+        "img": "https://cdn.imweb.me/thumbnail/20220312/69bb6cddee8bc.jpg"
+      },
+      {
+        "name": "프로텍팅 샴푸",
+        "brand": "도테라",
+        "price": 36000,
+        "url": "https://www.doterra.com/KR/ko_KR/p/protecting-shampoo-refill",
+        "img": "https://media.doterra.com/kr/images/product/protecting-shampoo-refill.jpg"
       }
     ]
   },
@@ -310,14 +352,14 @@
         "brand": "볼빅",
         "price": 76300,
         "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
-        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+        "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/2696375539/B.jpg?451000000"
       },
       {
         "name": "세비프록스",
         "brand": "약국에서 구매 가능(일반의약품)",
         "price": 0,
-        "url": "",
-        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+        "url": "#",
+        "img": "http://www.newsmp.com/news/photo/photo/14055_1.jpg"
       },
       {
         "name": "댄트롤 딥 클린 프레쉬 820ml",
@@ -325,88 +367,102 @@
         "price": 5950,
         "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
         "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+      },
+      {
+        "name": "로즈마리 스칼프 스케일링 샴푸 400ml",
+        "brand": "아로마티카",
+        "price": 16000,
+        "url": "https://brand.naver.com/aromatica/products/354461205?NaPm=ct%3Dl3oe7w1s%7Cci%3D0zC00020Jn1w7GhHiKZW%7Ctr%3Dpla%7Chk%3Df3f5a22ddff63c73baef6be53aa258fa17bd5710",
+        "img": "https://shopping-phinf.pstatic.net/main_2835440/28354403559.20210809154936.jpg?type=f640"
+      },
+      {
+        "name": "메덴스 샴푸",
+        "brand": "닥터아돌",
+        "price": 27500,
+        "url": "https://smartstore.naver.com/dradol/products/2839981923?NaPm=ct%3Dl3oeg214%7Cci%3De42520fa5e2b18f800230d7bf35743edaa528e7e%7Ctr%3Dslsc%7Csn%3D702339%7Chk%3D35d16b73e63e3bc085c1c1051cb454ef1bda1503",
+        "img": "https://shopping-phinf.pstatic.net/main_1245950/12459506736.20171017101031.jpg?type=f640"
       }
     ]
   },
   "good": {
     "result": "정상",
-    "summary": "서구식 식생활, 자극적인 음식 섭취 등으로 증가하고 있는 ‘지루성 두피염’이 대표적입니다. 지루성 두피는 보통 피지 분비량이 유난히 많아서 금방 두피와 모발이 기름집니다. 염증과 가려움증이 나타났다가 개선되기를 반복하기 때문에 긁다가 증상이 사라지면 방치하는 경우가 많습니다. 지루성 두피염은 이 같은 과정을 밟으며, 결국 잘 낫지 않는 고질병으로 악화됩니다. 증상이 심해지면 모낭염을 부르고, 탈모로도 이어질 수 있습니다.",
+    "summary": "정상 두피는 맑은 우유빛을 띄며 표면에 노화 각질, 피지산화물이 없는 깨끗한 상태인 유형입니다. 모공이 정상 형태를 갖고 굵기가 비슷한 2~3개의 모발이 자라는 상태입니다. 특히 모공이 열려있고 균일한 모발 사이의 밀집도를 가집니다. 두피에 아무런 비듬과 염증이 없으며 기름기나 마른 상태가 아닌 촉촉한 수분과 유분을 갖는 것이 특징입니다.",
     "treatments": [
       {
-        "title": "샴푸 후 자연건조보다 빨리 드라이 하는 게 좋다",
-        "content": "지루성 두피염은 두피와 모발에 습기가 많을 경우 증상이 더 악화되기 쉽습니다. 그래서 샴푸 후에는 드라이로 바로 두피와 모발을 말려주는 게 좋습니다. 드라이할 때 바람의 온도는 너무 뜨겁지만 않으면 되며, 모발이 긴 분들은 두피와 가까운 부위만이라도 습기를 제거해줘야 합니다. 특히 비듬이 있을수록 두피의 습기를 빨리 제거해줘야 합니다."
+        "title": "정상 상태를 유지하자",
+        "content": "현재의 상태를 지속적으로 유지하기 위해 묵은 각질이 쌓이지 않도록 한 달에 1~2회 정도 두피 스케일링을 하는 것이 좋습니다."
       },
       {
-        "title": "베개 커버만 자주 바꿔줘도 도움이 된다!",
-        "content": "잠자는 동안 두피와 얼굴에 계속 닿아있는 베개 커버는 의외로 많은 수의 세균들이 살고 있습니다. 변기 커버의 약 10배의 세균이 존재한다는 연구보고도 있습니다. 이 중에는 두피나 얼굴에 나쁜 영향을 주는 병원성 세균들도 존재합니다. 자는 동안 피지와 땀, 침 등이 계속 묻는데다 체온 탓에 균이 번식하기 좋은 온도가 돼서 베개 커버에 다양한 세균들이 존재하는 것입니다. 때문에 베개 커버를 자주 바꿔줄수록 두피와 얼굴의 지루성 피부염 개선에 도움이 됩니다. 2~3일에 한 번씩 세탁해서 바꿔주는 걸 추천합니다."
+        "title": "기본적인 샴푸 방법을 지켜야",
+        "content": "샴푸는 아침보다 되도록 저녁에 하는 것을 권장하며, 특히 샴푸 성분이 두피와 모발에 남아 있지 않도록 깨끗하게 헹궈주는 것이 좋다. 또한 샴푸 후에는 젖은 두피를 완전히 말린 후 잠드는 것이 좋습니다. 샴푸시 손톱이 아닌 손가락을 이용해 두피를 눌러주어 마사지를 하면 두피의 혈액순환을 촉진해 두피 건강에 좋습니다. 만약 린스를 할 경우 두피가 아닌 모발 끝을 위주로 사용하고 충분히 헹구어 주어야 한다."
       },
       {
-        "title": "증상 완화에 목표를 두어야",
-        "content": "지루성 두피염이 있는데 머리를 잘 감지 않고, 두피가 간지럽다고 손으로 긁으며, 샴푸를 깨끗이 씻어내지 않으면 증상이 더 심해집니다. 지루성 두피염은 단순히 샴푸나 생활습관 교정만으로 나아지기 힘든 경우도 많습니다. 제대로 관리하지 않는 경우가 많습니다. 결국 지루성 두피염이 만성화돼 잘 낫지 않는 고질병으로 악화됩니다. 특히 지루성 두피염이 10~20년 이상 지속되는 사람도 많습니다. 지루성 두피염의 원인은 복합적이어서 완치보다 증상 완화에 목적을 두는 것이 바람직합니다."
+        "title": "두피를 건강하게 말리기",
+        "content": "깨끗하고 마른 수건으로 두드리듯이 말려야 합니다. 비비거나 털어내면 모발이 쉽게 손상하기 때문입니다. 수건은 가급적 흡수성이 좋은 제품을 사용하고 가능하면 자연적으로 공기에 말리는 것이 좋습니다. 뜨거운 바람에 말리게 되면 머리카락의 수분이 바짝 말라 두피가 쉽게 건조해집니다. 아침에 시간에 쫓겨서 머리를 말리기 위해 드라이기를 쓸 때는 가능한 한 시원한 바람으로, 30cm이상 멀리 두어 사용해야 합니다."
       }
     ],
     "products": [
       {
-        "name": "세보샴푸 500g",
-        "brand": "볼빅",
+        "name": "네이처 샴푸 허니앤비터아몬드 500ml",
+        "brand": "쿤달",
         "price": 76300,
-        "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
-        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+        "url": "https://shopping.naver.com/beauty/stores/1000023836/products/6018034528?NaPm=ct%3Dl3of3he8%7Cci%3D4598883d9ee4f468e367865288360923e731395f%7Ctr%3Dslbrc%7Csn%3D454732%7Chk%3D087bf5a33fcdc020e48371454c97953c984a099f",
+        "img": "https://shopping-phinf.pstatic.net/main_1123392/11233920399.20211227160324.jpg?type=f640"
       },
       {
-        "name": "세비프록스",
-        "brand": "약국에서 구매 가능(일반의약품)",
-        "price": 0,
-        "url": "",
-        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+        "name": "검은콩 딥 스케일링 나이트 샴푸 로즈마리향 400ml",
+        "brand": "올솔",
+        "price": 15800,
+        "url": "https://smartstore.naver.com/allsol/products/4906241568?NaPm=ct%3Dl3of5hxc%7Cci%3D03aff0ca7bdfa8a23aee8fe63f1c249bad27a12b%7Ctr%3Dslbrc%7Csn%3D1214469%7Chk%3D9406ddb823b23127d22defc231b4f744616e0fea",
+        "img": "https://shopping-phinf.pstatic.net/main_2826972/28269721554.20211122181405.jpg?type=f640"
       },
       {
-        "name": "댄트롤 딥 클린 프레쉬 820ml",
-        "brand": "아모레퍼시픽",
-        "price": 5950,
-        "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
-        "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+        "name": "퓨어스마트 샴푸 프레시 500g",
+        "brand": "아모스",
+        "price": 10300,
+        "url": "http://item.gmarket.co.kr/DetailView/Item.asp?goodscode=2285283466&GoodsSale=Y&jaehuid=200001169&NaPm=ct%3Dl3of87x4%7Cci%3D85a644c8b6177651f0d68d895cd09805cd2f9987%7Ctr%3Dslsc%7Csn%3D24%7Chk%3D6264d8ee21df00903054879182036013af329376",
+        "img": "https://shopping-phinf.pstatic.net/main_2315222/23152221490.20200615171601.jpg?type=f640"
       }
     ]
   },
   "normal": {
     "result": "정상",
-    "summary": "서구식 식생활, 자극적인 음식 섭취 등으로 증가하고 있는 ‘지루성 두피염’이 대표적입니다. 지루성 두피는 보통 피지 분비량이 유난히 많아서 금방 두피와 모발이 기름집니다. 염증과 가려움증이 나타났다가 개선되기를 반복하기 때문에 긁다가 증상이 사라지면 방치하는 경우가 많습니다. 지루성 두피염은 이 같은 과정을 밟으며, 결국 잘 낫지 않는 고질병으로 악화됩니다. 증상이 심해지면 모낭염을 부르고, 탈모로도 이어질 수 있습니다.",
+    "summary": "정상 두피는 맑은 우유빛을 띄며 표면에 노화 각질, 피지산화물이 없는 깨끗한 상태인 유형입니다. 모공이 정상 형태를 갖고 굵기가 비슷한 2~3개의 모발이 자라는 상태입니다. 특히 모공이 열려있고 균일한 모발 사이의 밀집도를 가집니다. 두피에 아무런 비듬과 염증이 없으며 기름기나 마른 상태가 아닌 촉촉한 수분과 유분을 갖는 것이 특징입니다.",
     "treatments": [
       {
-        "title": "샴푸 후 자연건조보다 빨리 드라이 하는 게 좋다",
-        "content": "지루성 두피염은 두피와 모발에 습기가 많을 경우 증상이 더 악화되기 쉽습니다. 그래서 샴푸 후에는 드라이로 바로 두피와 모발을 말려주는 게 좋습니다. 드라이할 때 바람의 온도는 너무 뜨겁지만 않으면 되며, 모발이 긴 분들은 두피와 가까운 부위만이라도 습기를 제거해줘야 합니다. 특히 비듬이 있을수록 두피의 습기를 빨리 제거해줘야 합니다."
+        "title": "정상 상태를 유지하자",
+        "content": "현재의 상태를 지속적으로 유지하기 위해 묵은 각질이 쌓이지 않도록 한 달에 1~2회 정도 두피 스케일링을 하는 것이 좋습니다."
       },
       {
-        "title": "베개 커버만 자주 바꿔줘도 도움이 된다!",
-        "content": "잠자는 동안 두피와 얼굴에 계속 닿아있는 베개 커버는 의외로 많은 수의 세균들이 살고 있습니다. 변기 커버의 약 10배의 세균이 존재한다는 연구보고도 있습니다. 이 중에는 두피나 얼굴에 나쁜 영향을 주는 병원성 세균들도 존재합니다. 자는 동안 피지와 땀, 침 등이 계속 묻는데다 체온 탓에 균이 번식하기 좋은 온도가 돼서 베개 커버에 다양한 세균들이 존재하는 것입니다. 때문에 베개 커버를 자주 바꿔줄수록 두피와 얼굴의 지루성 피부염 개선에 도움이 됩니다. 2~3일에 한 번씩 세탁해서 바꿔주는 걸 추천합니다."
+        "title": "기본적인 샴푸 방법을 지켜야",
+        "content": "샴푸는 아침보다 되도록 저녁에 하는 것을 권장하며, 특히 샴푸 성분이 두피와 모발에 남아 있지 않도록 깨끗하게 헹궈주는 것이 좋다. 또한 샴푸 후에는 젖은 두피를 완전히 말린 후 잠드는 것이 좋습니다. 샴푸시 손톱이 아닌 손가락을 이용해 두피를 눌러주어 마사지를 하면 두피의 혈액순환을 촉진해 두피 건강에 좋습니다. 만약 린스를 할 경우 두피가 아닌 모발 끝을 위주로 사용하고 충분히 헹구어 주어야 한다."
       },
       {
-        "title": "증상 완화에 목표를 두어야",
-        "content": "지루성 두피염이 있는데 머리를 잘 감지 않고, 두피가 간지럽다고 손으로 긁으며, 샴푸를 깨끗이 씻어내지 않으면 증상이 더 심해집니다. 지루성 두피염은 단순히 샴푸나 생활습관 교정만으로 나아지기 힘든 경우도 많습니다. 제대로 관리하지 않는 경우가 많습니다. 결국 지루성 두피염이 만성화돼 잘 낫지 않는 고질병으로 악화됩니다. 특히 지루성 두피염이 10~20년 이상 지속되는 사람도 많습니다. 지루성 두피염의 원인은 복합적이어서 완치보다 증상 완화에 목적을 두는 것이 바람직합니다."
+        "title": "두피를 건강하게 말리기",
+        "content": "깨끗하고 마른 수건으로 두드리듯이 말려야 합니다. 비비거나 털어내면 모발이 쉽게 손상하기 때문입니다. 수건은 가급적 흡수성이 좋은 제품을 사용하고 가능하면 자연적으로 공기에 말리는 것이 좋습니다. 뜨거운 바람에 말리게 되면 머리카락의 수분이 바짝 말라 두피가 쉽게 건조해집니다. 아침에 시간에 쫓겨서 머리를 말리기 위해 드라이기를 쓸 때는 가능한 한 시원한 바람으로, 30cm이상 멀리 두어 사용해야 합니다."
       }
     ],
     "products": [
       {
-        "name": "세보샴푸 500g",
-        "brand": "볼빅",
+        "name": "네이처 샴푸 허니앤비터아몬드 500ml",
+        "brand": "쿤달",
         "price": 76300,
-        "url": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/",
-        "img": "https://ballvic.co.kr/product/%EB%B3%BC%EB%B9%85-%EC%84%B8%EB%B3%B4%EC%83%B4%ED%91%B8-500g/145/category/122/display/1/"
+        "url": "https://shopping.naver.com/beauty/stores/1000023836/products/6018034528?NaPm=ct%3Dl3of3he8%7Cci%3D4598883d9ee4f468e367865288360923e731395f%7Ctr%3Dslbrc%7Csn%3D454732%7Chk%3D087bf5a33fcdc020e48371454c97953c984a099f",
+        "img": "https://shopping-phinf.pstatic.net/main_1123392/11233920399.20211227160324.jpg?type=f640"
       },
       {
-        "name": "세비프록스",
-        "brand": "약국에서 구매 가능(일반의약품)",
-        "price": 0,
-        "url": "",
-        "img": "https://t1.daumcdn.net/cfile/blog/1916444B4DAFDFEB18"
+        "name": "검은콩 딥 스케일링 나이트 샴푸 로즈마리향 400ml",
+        "brand": "올솔",
+        "price": 15800,
+        "url": "https://smartstore.naver.com/allsol/products/4906241568?NaPm=ct%3Dl3of5hxc%7Cci%3D03aff0ca7bdfa8a23aee8fe63f1c249bad27a12b%7Ctr%3Dslbrc%7Csn%3D1214469%7Chk%3D9406ddb823b23127d22defc231b4f744616e0fea",
+        "img": "https://shopping-phinf.pstatic.net/main_2826972/28269721554.20211122181405.jpg?type=f640"
       },
       {
-        "name": "댄트롤 딥 클린 프레쉬 820ml",
-        "brand": "아모레퍼시픽",
-        "price": 5950,
-        "url": "https://www.ssg.com/item/itemView.ssg?itemId=0000008222293&siteNo=6001&salestrNo=6005&ckwhere=ssg_naver&appPopYn=n&utm_medium=PCS&utm_source=naver&utm_campaign=naver_pcs&nv_ad=pla&n_media=27758&n_query=%EB%8C%84%ED%8A%B8%EB%A1%A4%EB%94%A5%ED%81%B4%EB%A6%B0%ED%94%84%EB%A0%88%EC%89%AC%EC%83%B4%ED%91%B8&n_rank=1&n_ad_group=grp-a001-02-000000014731699&n_ad=nad-a001-02-000000164732591&n_campaign_type=2&n_mall_id=ssgcom&n_mall_pid=0000008222293&n_ad_group_type=2",
-        "img": "https://sitem.ssgcdn.com/93/22/22/item/0000008222293_i1_1200.jpg"
+        "name": "퓨어스마트 샴푸 프레시 500g",
+        "brand": "아모스",
+        "price": 10300,
+        "url": "http://item.gmarket.co.kr/DetailView/Item.asp?goodscode=2285283466&GoodsSale=Y&jaehuid=200001169&NaPm=ct%3Dl3of87x4%7Cci%3D85a644c8b6177651f0d68d895cd09805cd2f9987%7Ctr%3Dslsc%7Csn%3D24%7Chk%3D6264d8ee21df00903054879182036013af329376",
+        "img": "https://shopping-phinf.pstatic.net/main_2315222/23152221490.20200615171601.jpg?type=f640"
       }
     ]
   }

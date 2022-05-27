@@ -1,120 +1,7 @@
 import { ResponsiveLine } from "@nivo/line";
 import styles from "./MyResponsiveLine.module.css";
 
-const MyResponsiveLine = () => {
-  const data = [
-    {
-      id: "모낭사이홍반",
-      color: "hsl(301, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.5,
-        },
-        {
-          x: "22-05-20",
-          y: 0.4,
-        },
-        {
-          x: "22-05-21",
-          y: 0.43,
-        },
-        {
-          x: "22-05-22",
-          y: 0.45,
-        },
-      ],
-    },
-    {
-      id: "모낭홍반농포",
-      color: "hsl(16, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.2,
-        },
-        {
-          x: "22-05-20",
-          y: 0.3,
-        },
-        {
-          x: "22-05-21",
-          y: 0.4,
-        },
-        {
-          x: "22-05-22",
-          y: 0.2,
-        },
-      ],
-    },
-    {
-      id: "미세각질",
-      color: "hsl(239, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.4,
-        },
-        {
-          x: "22-05-20",
-          y: 0.2,
-        },
-        {
-          x: "22-05-21",
-          y: 0.2,
-        },
-        {
-          x: "22-05-22",
-          y: 0.3,
-        },
-      ],
-    },
-    {
-      id: "비듬",
-      color: "hsl(165, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.3,
-        },
-        {
-          x: "22-05-20",
-          y: 0.4,
-        },
-        {
-          x: "22-05-21",
-          y: 0.4,
-        },
-        {
-          x: "22-05-22",
-          y: 0.3,
-        },
-      ],
-    },
-    {
-      id: "탈모",
-      color: "hsl(180, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.4,
-        },
-        {
-          x: "22-05-20",
-          y: 0.5,
-        },
-        {
-          x: "22-05-21",
-          y: 0.43,
-        },
-        {
-          x: "22-05-22",
-          y: 0.32,
-        },
-      ],
-    },
-  ];
-
+const MyResponsiveLine = ({ userData }) => {
   return (
     <div className={styles["graph-wrapper"]}>
       <div className={styles.title}>
@@ -123,7 +10,7 @@ const MyResponsiveLine = () => {
       </div>
       <div className={styles.graph}>
         <ResponsiveLine
-          data={data}
+          data={userData}
           margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
           xScale={{ type: "point" }}
           yScale={{

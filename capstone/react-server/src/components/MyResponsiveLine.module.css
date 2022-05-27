@@ -10,7 +10,7 @@
 
 .graph {
   width: 100%;
-  min-width: 550px;
+  min-width: 800px;
   height: 500px;
 }
 
@@ -36,7 +36,7 @@
   }
 
   .graph {
-    min-width: 600px;
+    /* min-width: 700px; */
   }
 
   .title {
@@ -55,7 +55,7 @@
   }
 
   .graph {
-    min-width: 550px;
+    /* min-width: 550px; */
   }
 
   .title {
