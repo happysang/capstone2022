@@ -1,5 +1,5 @@
 import { ResponsiveRadar } from "@nivo/radar";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./MyResponsiveRadar.module.css";
 
 const MyResponsiveRadar = ({ data }) => {
@@ -59,4 +59,4 @@ const MyResponsiveRadar = ({ data }) => {
   );
 };
 
-export default MyResponsiveRadar;
+export default React.memo(MyResponsiveRadar);

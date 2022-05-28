@@ -31,13 +31,11 @@ const UploadForm = () => {
     setIsSpinner(true);
 
     const imgChange = async () => {
-      console.log("imagechange");
-
       const formData = new FormData();
       formData.append("file", imageFile);
 
-      for (const keyValue of formData) console.log(keyValue);
-      console.log(...formData);
+      // for (const keyValue of formData) console.log(keyValue);
+      // console.log(...formData);
 
       try {
         const response = await axios({
@@ -48,7 +46,6 @@ const UploadForm = () => {
             "Content-Type": "multipart/form-data",
           },
         });
-        console.log("res", response);
         if (response.status === 500) {
           // setError(true);
           throw new Error("유효한 사진이 아닙니다.");
@@ -66,7 +63,6 @@ const UploadForm = () => {
         navigate("/result");
       } catch (err) {
         console.error(err);
-        console.log(err);
         setError(true);
       }
     };

@@ -1,10 +1,10 @@
 import { useEffect, useState, useContext } from "react";
 import MyResponsiveRadar from "./MyResponsiveRadar";
-import TinySlider from "tiny-slider-react";
 import styles from "./ResultView.module.css";
 import { API_BASE_URL } from "../service/backend-config";
 import datasets from "../result-data.json";
 import AuthContext from "../store/auth-context";
+import ProductList from "./ProductList";
 
 const ResultView = () => {
   const [userResult, setUserResult] = useState("");
@@ -19,8 +19,6 @@ const ResultView = () => {
     typeOfScalp: localstorage.typeOfScalp,
   };
   const type = resultObj.result; // 진단 결과 타입
-  // console.log("res", resultObj);
-  // console.log(type);
 
   if (type !== userResult) {
     setUserResult(type);
@@ -28,12 +26,9 @@ const ResultView = () => {
 
   const markHandler = (e) => {
     const markNum = e.target.dataset.slide;
-    console.log(markNum);
-    console.log(`${isActive === String(1) ? "isActive" : "none"}`);
     setActive(markNum);
   };
 
-  // console.log("id", id);
   let today = new Date();
 
   let year = String(today.getFullYear()).slice(2); // 년도
@@ -53,11 +48,8 @@ const ResultView = () => {
   const data = resultObj.typeOfScalp.map((val) => val.value);
 
   data.forEach((val, idx) => {
-    obj[`data${idx + 1}`] = val || 0;
+    obj[`data${idx + 1}`] = String(Number(val).toFixed(2)) || 0;
   });
-
-  // console.log(data);
-  console.log(obj);
 
   useEffect(() => {
     let headers = {
@@ -78,16 +70,15 @@ const ResultView = () => {
         });
 
         if (!response.ok) {
+          throw new Error("에러 발생");
         }
-        console.log(response);
       } catch (err) {
-        console.log(err.message);
+        console.error(err);
       }
     };
 
     api();
-    console.log("aaa"); //랜더링 확인
-  }, [userResult]);
+  }, [token]);
 
   const resultData = datasets[type];
   const { result } = resultData;
@@ -95,34 +86,6 @@ const ResultView = () => {
   const { treatments } = resultData;
 
   const { products } = resultData;
-  console.log(products);
-
-  const settings = {
-    // container: "#responsive",
-    container: ".product-card",
-    items: 1,
-    center: true,
-    controlsText: ["<", ">"],
-    mouseDrag: true,
-    loop: true,
-    swipeAngle: false,
-    speed: 400,
-    gutter: 20,
-    responsive: {
-      350: {
-        items: 3,
-        controls: true,
-        edgePadding: 30,
-      },
-      500: {
-        items: 4,
-      },
-    },
-  };
-
-  const clickEvent = (slide) => {
-    console.log(slide);
-  };
 
   return (
     <div className={styles.wrapper}>
@@ -180,42 +143,7 @@ const ResultView = () => {
         </div>
         <div className={styles["recommendation-products"]}>
           <h1 className={styles.title}>맞춤 추천 상품</h1>
-          <div className={styles["product-list"]}>
-            <TinySlider settings={settings} onInit={clickEvent}>
-              {products.map((item, index) => (
-                <div key={index} className={styles["product-card"]}>
-                  <a href={item.url} target="_blank">
-                    <div className={styles["product-img"]}>
-                      <img src={item.img} alt="product-image" />
-                    </div>
-                    <div className={styles["product-content"]}>
-                      <p className={styles.brand}>{item.brand}</p>
-                      <h3 className={styles.name}>{item.name}</h3>
-                      <p className={styles.price}>
-                        <strong>{item.price.toLocaleString()}</strong>원
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              ))}
-            </TinySlider>
-            {/* {products.map((item) => (
-              <div className={styles["product-card"]}>
-                <a href={item.url} target="_blank">
-                  <div className={styles["product-img"]}>
-                    <img src={item.img} alt="product-image" />
-                  </div>
-                  <div className={styles["product-content"]}>
-                    <p className={styles.brand}>{item.brand}</p>
-                    <h3 className={styles.name}>{item.name}</h3>
-                    <p className={styles.price}>
-                      <strong>{item.price.toLocaleString()}</strong>원
-                    </p>
-                  </div>
-                </a>
-              </div>
-            ))} */}
-          </div>
+          <ProductList data={products} />
         </div>
       </div>
     </div>

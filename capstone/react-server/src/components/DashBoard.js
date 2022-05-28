@@ -144,6 +144,7 @@ const initialData = [
 ];
 
 const DashBoard = () => {
+  const [isData, setIsData] = useState(false);
   const [userData, setUserData] = useState(initialData);
   const [dataCount, setDataCount] = useState(0);
   const [latestResult, setLatestResult] = useState("");
@@ -176,7 +177,6 @@ const DashBoard = () => {
         ...headers,
         Authorization: "Bearer " + token,
       };
-      console.log("headers", headers);
     }
     const api = async () => {
       const response = await fetch(`${API_BASE_URL}/result`, {
@@ -185,13 +185,11 @@ const DashBoard = () => {
       });
 
       const user = await response.json();
-      console.log(user);
 
       const dataList = user.data;
+
       count = dataList.length;
-      console.log("cu", count);
-      latest = datasets[dataList[dataList.length - 1].overallData].result;
-      console.log("la", latest);
+      latest = datasets[dataList[dataList.length - 1]?.overallData]?.result;
 
       if (count === 0) return;
 
@@ -211,12 +209,11 @@ const DashBoard = () => {
         let v = dataList.map((val) => {
           return {
             x: `${val.date}`,
-            y: +Number(val[`data${i + 1}`]).toFixed(2),
+            y: +val[`data${i + 1}`],
           };
         });
         value.push(v);
       }
-      console.log(value);
 
       for (let i = 0; i < type.length; i++) {
         const color = Math.floor(Math.random() * 360);
@@ -228,7 +225,7 @@ const DashBoard = () => {
         data.push(v);
       }
 
-      console.log(data);
+      if (count) setIsData(true);
       setUserData(data);
       setDataCount(count);
       setLatestResult(latest);
@@ -261,7 +258,9 @@ const DashBoard = () => {
                 </div>
                 <div>
                   <p className={styles.title}>최근 진단 결과</p>
-                  <p className={styles.value}>{latestResult}</p>
+                  <p className={styles.value}>
+                    {latestResult.trim().length === 0 ? "없음" : latestResult}
+                  </p>
                 </div>
               </li>
               <li className={styles["overview-item"]}>
@@ -278,10 +277,7 @@ const DashBoard = () => {
               </li>
             </ul>
           </div>
-          <MyResponsiveLine
-            userData={userData}
-            className={styles["graph-line"]}
-          />
+          <MyResponsiveLine userData={userData} valid={isData} />
         </div>
       </Container>
     </div>

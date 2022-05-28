@@ -1,9 +1,21 @@
 import { ResponsiveLine } from "@nivo/line";
+import { useState, useEffect } from "react";
 import styles from "./MyResponsiveLine.module.css";
 
-const MyResponsiveLine = ({ userData }) => {
+const MyResponsiveLine = ({ userData, valid }) => {
+  const [isValid, setIsValid] = useState(true);
+
+  useEffect(() => {
+    setIsValid(valid);
+  }, [valid]);
+
   return (
     <div className={styles["graph-wrapper"]}>
+      {!isValid && (
+        <div className={styles.cover}>
+          <h3>진단 결과 데이터를 찾을 수 없습니다.</h3>
+        </div>
+      )}
       <div className={styles.title}>
         <h1>요약 그래프</h1>
         <p>날짜별 수치값을 확인할 수 있습니다.</p>
@@ -49,7 +61,6 @@ const MyResponsiveLine = ({ userData }) => {
           pointLabelYOffset={-12}
           useMesh={true}
           areaBaselineValue={30}
-          // enableArea={true}
           legends={[
             {
               anchor: "bottom-right",

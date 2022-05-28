@@ -32,7 +32,6 @@ const LoginForm = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("submit");
 
     const enteredEmail = emailInputRef.current.value;
     const enteredPassword = passwordInputRef.current.value;
@@ -43,8 +42,6 @@ const LoginForm = () => {
       email: enteredEmail,
       password: enteredPassword,
     };
-
-    console.log(userData);
 
     setInputsValidity({
       email: enteredEmailIsValid,
