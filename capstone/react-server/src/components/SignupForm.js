@@ -54,7 +54,6 @@ const SignupForm = () => {
     }
 
     for (let vaild in inputsValidity) {
-      console.log(vaild, inputsValidity[vaild]);
       if (inputsValidity[vaild]) continue;
       else return false;
     }
@@ -240,8 +239,6 @@ const SignupForm = () => {
   };
 
   const iconButtonClickHandler = (e) => {
-    console.log(e.target.closest("button").dataset.icon);
-    console.log(e.target.dataset.icon);
     if (e.target.closest("button").dataset.icon === "1") {
       setIsVisible1((prevState) => !prevState);
     } else {
@@ -255,8 +252,6 @@ const SignupForm = () => {
     let formIsVaild = checkValidForm();
     if (!formIsVaild) return;
 
-    console.log("submit");
-
     const userData = {
       username: enteredName,
       age: enteredAge,
@@ -264,8 +259,6 @@ const SignupForm = () => {
       email: enteredEmail,
       password: enteredPassword1,
     };
-
-    console.log(userData);
 
     authCtx.signup(userData);
   };

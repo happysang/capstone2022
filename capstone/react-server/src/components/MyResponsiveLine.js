@@ -1,129 +1,28 @@
 import { ResponsiveLine } from "@nivo/line";
+import { useState, useEffect } from "react";
 import styles from "./MyResponsiveLine.module.css";
 
-const MyResponsiveLine = () => {
-  const data = [
-    {
-      id: "모낭사이홍반",
-      color: "hsl(301, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.5,
-        },
-        {
-          x: "22-05-20",
-          y: 0.4,
-        },
-        {
-          x: "22-05-21",
-          y: 0.43,
-        },
-        {
-          x: "22-05-22",
-          y: 0.45,
-        },
-      ],
-    },
-    {
-      id: "모낭홍반농포",
-      color: "hsl(16, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.2,
-        },
-        {
-          x: "22-05-20",
-          y: 0.3,
-        },
-        {
-          x: "22-05-21",
-          y: 0.4,
-        },
-        {
-          x: "22-05-22",
-          y: 0.2,
-        },
-      ],
-    },
-    {
-      id: "미세각질",
-      color: "hsl(239, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.4,
-        },
-        {
-          x: "22-05-20",
-          y: 0.2,
-        },
-        {
-          x: "22-05-21",
-          y: 0.2,
-        },
-        {
-          x: "22-05-22",
-          y: 0.3,
-        },
-      ],
-    },
-    {
-      id: "비듬",
-      color: "hsl(165, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.3,
-        },
-        {
-          x: "22-05-20",
-          y: 0.4,
-        },
-        {
-          x: "22-05-21",
-          y: 0.4,
-        },
-        {
-          x: "22-05-22",
-          y: 0.3,
-        },
-      ],
-    },
-    {
-      id: "탈모",
-      color: "hsl(180, 70%, 50%)",
-      data: [
-        {
-          x: "22-05-19",
-          y: 0.4,
-        },
-        {
-          x: "22-05-20",
-          y: 0.5,
-        },
-        {
-          x: "22-05-21",
-          y: 0.43,
-        },
-        {
-          x: "22-05-22",
-          y: 0.32,
-        },
-      ],
-    },
-  ];
+const MyResponsiveLine = ({ userData, valid }) => {
+  const [isValid, setIsValid] = useState(true);
+
+  useEffect(() => {
+    setIsValid(valid);
+  }, [valid]);
 
   return (
     <div className={styles["graph-wrapper"]}>
+      {!isValid && (
+        <div className={styles.cover}>
+          <h3>진단 결과 데이터를 찾을 수 없습니다.</h3>
+        </div>
+      )}
       <div className={styles.title}>
         <h1>요약 그래프</h1>
         <p>날짜별 수치값을 확인할 수 있습니다.</p>
       </div>
       <div className={styles.graph}>
         <ResponsiveLine
-          data={data}
+          data={userData}
           margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
           xScale={{ type: "point" }}
           yScale={{
@@ -162,7 +61,6 @@ const MyResponsiveLine = () => {
           pointLabelYOffset={-12}
           useMesh={true}
           areaBaselineValue={30}
-          // enableArea={true}
           legends={[
             {
               anchor: "bottom-right",

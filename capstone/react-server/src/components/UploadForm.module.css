@@ -1,7 +1,45 @@
-.form {
+.upload-form {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  align-items: center;
+}
+
+.notice {
+  width: 100%;
+  max-width: 960px;
+  background-color: #4fe9a4;
+  padding: 34px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  border-radius: 10px;
+  animation: slide-down 0.3s ease-out forwards;
+}
+
+.notice-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.notice-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.notice-item .desc {
+  font-size: 18px;
+}
+
+.notice-item .desc strong {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -59,16 +97,16 @@ input:disabled:active {
   object-fit: cover;
 }
 
-.title {
+.content-wrapper .title {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 34px;
   margin-bottom: 12px;
 }
 
 .detail {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
   color: #777777;
 }
@@ -133,7 +171,41 @@ button:disabled:active {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .notice {
+    padding: 32px 54px;
+    margin-bottom: 30px;
+  }
+
+  .notice-title {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .notice {
+    padding: 30px 44px;
+    margin-bottom: 26px;
+  }
+
+  .notice-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .notice-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .notice-item .desc {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .notice-item .desc strong {
+    font-size: 19px;
+  }
+
   .form-wrapper {
     padding: 76px 20px;
     margin-bottom: 25px;
@@ -145,8 +217,8 @@ button:disabled:active {
     margin-bottom: 18px;
   }
 
-  .title {
-    font-size: 22px;
+  .content-wrapper .title {
+    font-size: 24px;
     margin-bottom: 6px;
   }
 
@@ -164,6 +236,25 @@ button:disabled:active {
 }
 
 @media screen and (max-width: 576px) {
+  .notice {
+    padding: 26px 34px;
+    margin-bottom: 24px;
+  }
+
+  .notice-title {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+
+  .notice-item .desc {
+    font-size: 16px;
+  }
+
+  .notice-item .desc strong {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
   .form-wrapper {
     padding: 64px 16px;
     margin-bottom: 20px;
@@ -175,7 +266,7 @@ button:disabled:active {
     margin-bottom: 14px;
   }
 
-  .title {
+  .content-wrapper .title {
     font-size: 20px;
     margin-bottom: 4px;
   }
@@ -206,7 +297,7 @@ button:disabled:active {
     margin-bottom: 14px;
   }
 
-  .title {
+  .content-wrapper .title {
     font-size: 18px;
     margin-bottom: 0;
   }

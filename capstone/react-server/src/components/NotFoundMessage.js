@@ -16,7 +16,9 @@ const NotFoundMessage = () => {
           <ImgNotFound />
         </div>
         <h1>해당 페이지를 찾을 수 없습니다.</h1>
-        <p>주소가 잘못되었거나 더 이상 제공되지 않는 페이지입니다.</p>
+        <p>
+          주소가 잘못되었거나 <br />더 이상 제공되지 않는 페이지입니다.
+        </p>
       </div>
       <button
         className={styles["previous-btn"]}

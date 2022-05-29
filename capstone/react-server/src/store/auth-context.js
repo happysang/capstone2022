@@ -24,16 +24,13 @@ export const call = async (api, userData, isLogin = false) => {
       Authorization: "Bearer " + accessToken,
     };
   }
-  console.log(userData);
 
   try {
-    console.log("try");
     const response = await fetch(`${API_BASE_URL}${api}`, {
       method: "POST",
       headers,
       body: JSON.stringify(userData),
     });
-    console.log("res", response);
     const data = await response.json();
     if (!response.ok) {
       //throw new Error(data.error);
@@ -45,7 +42,6 @@ export const call = async (api, userData, isLogin = false) => {
     }
     return response;
   } catch (err) {
-    console.log(err.message);
     if (err.status === 403) {
       window.location.href = "/login";
     }
@@ -97,8 +93,6 @@ export const AuthContextProvider = (props) => {
 
   const loginHandler = async (userData) => {
     const { token, id } = await call("/auth/signin", userData, true);
-    console.log(token);
-    console.log(id);
     setToken(token);
     setId(id);
 
@@ -125,7 +119,7 @@ export const AuthContextProvider = (props) => {
     signup: signupHandler,
   };
 
-  console.log(contextValue);
+  // console.log(contextValue);
 
   return (
     <AuthContext.Provider value={contextValue}>
