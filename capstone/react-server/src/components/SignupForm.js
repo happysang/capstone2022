@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as IconEye } from "../assets/icons/iconEye.svg";
 import { ReactComponent as IconEyeHidden } from "../assets/icons/iconEyeHidden.svg";
@@ -34,6 +34,10 @@ const SignupForm = () => {
   });
 
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem("USER_INFO", null);
+  }, []);
 
   const checkValidForm = () => {
     setInputsValidity((prevState) => {
@@ -259,6 +263,8 @@ const SignupForm = () => {
       email: enteredEmail,
       password: enteredPassword1,
     };
+
+    localStorage.setItem("USER_INFO", enteredName);
 
     authCtx.signup(userData);
   };

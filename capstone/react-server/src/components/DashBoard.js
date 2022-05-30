@@ -150,6 +150,7 @@ const DashBoard = () => {
   const [latestResult, setLatestResult] = useState("");
   const [manyResult, setManyResult] = useState("");
   const [manyCount, setManyCount] = useState(0);
+  const [userName, setUserName] = useState("");
   const authCtx = useContext(AuthContext);
   const { token } = authCtx;
 
@@ -169,6 +170,8 @@ const DashBoard = () => {
   ];
 
   useEffect(() => {
+    setUserName(localStorage.getItem("USER_INFO"));
+
     let headers = {
       "Content-Type": "application/json",
     };
@@ -241,7 +244,9 @@ const DashBoard = () => {
       <Container>
         <div>
           <div className={styles["user-content"]}>
-            <div className={styles.userInfo}>Hello, 회원님 👋🏻</div>
+            <div className={styles.userInfo}>
+              안녕하세요😀 {userName} 회원님!
+            </div>
             <ul className={styles["overview-list"]}>
               <li className={styles["overview-item"]}>
                 <div className={styles.icon}>
